@@ -48,11 +48,18 @@ opacity:0.4;
 filter:blur(100px);
 }
 
-.decode_ip_addr{
+.decode_ip_addr1{
 position:absolute;
 top:38vw;
-left:35vw;
+left:29vw;
 }
+
+.ip{cursor:default;}
+
+.decode_ip_addr1:hover{opacity:0;transition:100ms ease;}
+.decode_ip_addr1:hover + .decode_ip_addr2{opacity:1; transition:100ms ease;}
+
+.decode_ip_addr2{position:absolute; left:38vw; top:38vw; opacity:0;}
 
 @font-face{
 font-family:steamy;
@@ -85,10 +92,9 @@ body{background:black;}
 position:absolute;
 top:15vw;
 left:22vw;
+cursor:default;
 }
-
-.ip{animation-name:anm_fade; animation-duration:2s; animation-delay:5s;}
-
+	
 @keyframes anm_fade{from{opacity:1;} to{opacity:0;}}
 @keyframes anm_defade{from{opacity:0;} to{opacity:1;}}
 </style>
@@ -99,7 +105,8 @@ left:22vw;
 <p class="main_font" style="font-family:font2; color:white; font-size:12vw;">SAM<span style="font-family:font1; color:white; font-size:8vw;">BH</span>RMA</p>
 
 <div class="ip"><div class="decode_ip_addr_div"></div>
-<p id="let" class="decode_ip_addr" style="font-family:rc; color:white; font-size:4vw;">2<span id="let_1" style="font-family:steamy; color:white; font-size:3.5vw;">0</span>.5.<span id="let_2" style="font-family:aerial; color:white; font-size:3.5vw;">3</span>.8<span style="font-family:rc; color:white; font-size:2.8vw;">..9.19</span><span id="let_4" style="font-family:rc; color:white; font-size:2vw;">..6.1.2<span id="let_3" style="font-family:steamy; color:white; font-size:2vw;">0</span>.1.12</span></p></div>
+<p id="let" class="decode_ip_addr1" style="font-family:font2; color:white; font-size:4vw;">20.5.3.8..9.19..6.1.20.1.12</p>
+<p id="decode_ip_addr2" class="decode_ip_addr2" style="font-family:font2; color:white; font-size:4vw;">TECH IS FATAL</p></div>
 
 <div class="top_menu">
 <a href="#" class="home">Home</a>
@@ -112,35 +119,7 @@ left:22vw;
 
 <script>
 
-var colors=["black","white"]
-var colors2=["black","white"]
-var colors3=["black","white"]
-var index=0;
 
-
-function func1(){
-var d4=document.getElementById("let");
-var d=document.getElementById("let_1");
-var d2=document.getElementById("let_2");						//Bug in ..6.1.2 it is a bug that is all text after the ..6.1.2 is getting the glitch together so what we have to do is add seperate span to all.
-var d3=document.getElementById("let_3");
-var d5=document.getElementById("let_4");
-var randomIndex4=Math.floor(Math.random()*colors3.length);
-var randomIndex=Math.floor(Math.random()*colors.length);				//20.5.3.8..9.19..6.1.20.1.12 means TECH IS FATAL -> T-20,E-5.... AND ..-' '
-var randomIndex2=Math.floor(Math.random()*colors2.length);
-var randomIndex3=Math.floor(Math.random()*colors3.length);
-var randomIndex5=Math.floor(Math.random()*colors3.length);
-var color=colors[randomIndex]
-var color2=colors2[randomIndex2]
-var color3=colors3[randomIndex3]
-var color4=colors3[randomIndex4]
-var color5=colors3[randomIndex5]
-d.style.color=color;
-d2.style.color=color2;
-d3.style.color=color3;
-d4.style.color=color4;
-d5.style.color=color5;
-}
-setInterval(func1,100)
 </script>
 
 </body>
