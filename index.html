@@ -98,6 +98,11 @@ font-family:glitch;
 src:url("Demosdcyberglitch-yw6GM.ttf");
 }
 
+@font-face{
+font-family: font_no;
+src: url("WolfalconRegular-RpjW3.ttf");
+}
+
 body{background:black;}
 
 .main_font{
@@ -122,6 +127,7 @@ text-shadow:0vw 0vw 0.5vw white;
 
 
 .top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none;}
+.top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
 
 .top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
 .top_div_tittle_p{font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white;}
@@ -130,17 +136,19 @@ text-shadow:0vw 0vw 0.5vw white;
 
 .top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
 
-.top_div_menu{position:absolute; height:80%; width:20vw; top:2vw; right:2.5vw; background-color:none;}
-.menu_line_1{position:absolute; height:0.7vw; width:8vw; top:6vw; left:1.5vw; background-color:white;}
-.menu_line_2{position:absolute; height:0.7vw; width:13vw; top:8.6vw; left:1.5vw; background-color:white;}
-.menu_line_3{position:absolute; height:0.7vw; width:18vw; top:10.85vw; left:1.5vw; background-color:white;}
+.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; background-color:none;}
+.menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white;}
+.menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white;}
+.menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white;}
 
-.main_1_head{position:absolute; height:40vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white;}
-.head_p_1{font-family:kannada; margin-top:1vw; text-align:center; color:white; font-size:8vw;}
-.head_p_2{font-family:glitch; margin-top:-4vw; text-align:center; color:white; font-size:25vw;}
-.head_p_3{font-family:kannada; margin-top:-23vw; text-align:center; color:white; font-size:5vw;}
+.main_1_head{position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white;}
+.main_1_head_animation{position:absolute; height:55vw; width:100%; top:0vw; left:0vw; background-color: white; animation:1s reveal_main_1_head forwards; animation-delay:0.15s;}
+.head_p_1{font-family:font1; margin-top:10vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;}
+.head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white; animation:font 1.3s infinite linear alternate-reverse;}
+.head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;}
 
-.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:63vw; left:0vw; border-bottom:1vw solid white;}
+.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white;}
+.main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.5s reveal_astronaut forwards; animation-delay: 0.15s;}
 .main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%;}
 .main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:26vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent;}
 .main_content_1_astronaut_circle_2{position:absolute; height:98vw; width:97vw; top:15.3vw; left:1vw; border-radius:50%; border:1vw solid white; background:transparent;}
@@ -155,7 +163,13 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_1_astronaut_planet_8{position:absolute; display:; height:7vw; width:7vw; top:62vw; left:47vw; background-image:url("Blob8.png"); background-repeat:no-repeat; animation:blob 5s linear infinite; animation-delay:3.85s;}
 .main_content_1_astronaut_planet_9{position:absolute; display:; height:7vw; width:7vw; top:62vw; left:47vw; background-image:url("Blob9.png"); background-repeat:no-repeat; animation:blob 5s linear infinite; animation-delay:4.4s;}
 
+.cont_main_astro_move{position:absolute; background-color: #4158D0; top:-5vw; height: auto; width: auto; }
+
 @keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(45vw)rotate(-360deg)}}
+@keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
+@keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
+@keyframes reveal_main_1_head {from{height:55vw;} to{height:0vw;}}
+@keyframes reveal_astronaut {from{height:100%;} to{height: 0vw;}}
 
 /*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.*/
 
@@ -191,6 +205,7 @@ text-shadow:0vw 0vw 0.5vw white;
 
 
 <div class="top_div">
+	<div class="top_div_animation"></div>
 <div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div>
 <div class="top_div_vertical_line"></div>
 <div class="top_div_horizontal_line"></div>
@@ -202,12 +217,15 @@ text-shadow:0vw 0vw 0.5vw white;
 </div>
 
 <div class="main_1_head">
+	<div class="main_1_head_animation"></div>
 	<p class="head_p_1">It's Time To Fly.</p>
-	<p class="head_p_2">MALCO</p>
+	<p class="head_p_2">2K23</p>
 	<p class="head_p_3">18 - 25 December</p>
 </div>
 
 <div class="main_content_1_rotating_planets_with_astronaut">
+	<div class="main_content_1_rotating_planets_with_astronaut_animation"></div>
+	<div class="cont_main_astro_move">
 	<div class="main_content_1_astronaut"></div>
 	<div class="main_content_1_astronaut_circle_1"></div>
 	<div class="main_content_1_astronaut_circle_2"></div>
@@ -220,6 +238,7 @@ text-shadow:0vw 0vw 0.5vw white;
 		<div class="main_content_1_astronaut_planet_7"></div>
 		<div class="main_content_1_astronaut_planet_8"></div>
 		<div class="main_content_1_astronaut_planet_9"></div>
+	</div>
 </div>
 
 
