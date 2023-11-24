@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 @font-face{
@@ -131,26 +130,26 @@ text-shadow:0vw 0vw 0.5vw white;
 .top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
 
 .top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
-.top_div_tittle_p{font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white;}
+.top_div_tittle_p{opacity:0; font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:1s opacity_tittle forwards; animation-delay:0.3s;}
 
 .top_div_vertical_line{position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
 
 .top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
 
 .top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; background-color:none;}
-.menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white;}
-.menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white;}
-.menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white;}
+.menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.1s;}
+.menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.17s;}
+.menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.22s;}
 
 .main_1_head{position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white;}
 .main_1_head_animation{position:absolute; height:55vw; width:100%; top:0vw; left:0vw; background-color: white; animation:1s reveal_main_1_head forwards; animation-delay:0.15s;}
-.head_p_1{font-family:font1; margin-top:10vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;}
-.head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white; animation:font 1.3s infinite linear alternate-reverse;}
-.head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;}
+.head_p_1{font-family:font1; margin-top:10vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white; animation:1s scale_head_p forwards; animation-delay:0.18s;}
+.head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
+.head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 
 .main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white;}
 .main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.5s reveal_astronaut forwards; animation-delay: 0.15s;}
-.main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%;}
+.main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s astronaut_float infinite ease-in; animation-direction: alternate-reverse;}
 .main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:26vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent;}
 .main_content_1_astronaut_circle_2{position:absolute; height:98vw; width:97vw; top:15.3vw; left:1vw; border-radius:50%; border:1vw solid white; background:transparent;}
 
@@ -171,6 +170,10 @@ text-shadow:0vw 0vw 0.5vw white;
 @keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
 @keyframes reveal_main_1_head {from{height:55vw;} to{height:0vw;}}
 @keyframes reveal_astronaut {from{height:100%;} to{height: 0vw;}}
+@keyframes scale_head_p{from{scale:0.8;} to{scale:1;}}
+@keyframes opacity_tittle{from{opacity:0; scale:0.8;} to{opacity: 1; scale: 1;}}
+@keyframes menu_line_reveal{from{left:1000vw;} to{left:1.5vw;}}
+@keyframes astronaut_float{from{top:24vw;} to{top:21vw;}}
 
 /*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.*/
 
