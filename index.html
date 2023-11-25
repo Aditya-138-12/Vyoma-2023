@@ -116,6 +116,8 @@ text-shadow:0vw 0vw 0.5vw white;
 @keyframes anm_fade{from{opacity:1;} to{opacity:0;}}
 @keyframes anm_defade{from{opacity:0;} to{opacity:1;}}
 
+
+
 @media (max-width:480px){
 .main_font{display:none;}
 .ip{display:none;}
@@ -125,8 +127,8 @@ text-shadow:0vw 0vw 0.5vw white;
 .top_menu{display:none;}
 
 
-
-.top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%;}
+.options{position:absolute; display: none; height:187vw; width:100%; top:23vw; left:0vw; display:; background-color:blue;}
+.top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%; overflow:hidden;}
 .top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
 
 .top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
@@ -136,36 +138,46 @@ text-shadow:0vw 0vw 0.5vw white;
 
 .top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
 
-.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; background-color:none;}
+.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; z-index:10000;}
+.top_div_menu:hover + .options{display:none;}
 .menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.1s;}
 .menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.17s;}
 .menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.22s;}
 
-.main_1_head{position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:150% 150%;}
+.main_1_head{position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:150% 150%; overflow:hidden;}
 .main_1_head_animation{position:absolute; height:55vw; width:100%; top:0vw; left:0vw; background-color: white; animation:1s reveal_main_1_head forwards; animation-delay:0.15s;}
 .head_p_1{font-family:font1; margin-top:10vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white; animation:1s scale_head_p forwards; animation-delay:0.18s;}
 .head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 .head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 
-.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%;}
+.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden;}
 .main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.2s reveal_astronaut forwards; animation-delay: 0.15s;}
 .main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s astronaut_float infinite ease-in; animation-direction: alternate-reverse;}
 .main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:27vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent;}
 .main_content_1_astronaut_circle_2{position:absolute; height:98vw; width:97vw; top:16.3vw; left:1vw; border-radius:50%; border:1vw solid white; background:transparent;}
 
-.main_content_1_astronaut_planet_1{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b1.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:0.87s, 0.9s;}
-.main_content_1_astronaut_planet_2{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:1.74s, 1.8s;}
-.main_content_1_astronaut_planet_3{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b3.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:2.61s, 2.7s;}
-.main_content_1_astronaut_planet_4{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b4.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:3.48s, 3.6s;}
-.main_content_1_astronaut_planet_5{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b1.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:4.35s, 4.5s;}
-.main_content_1_astronaut_planet_6{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:5.22s, 5.4s;}
-.main_content_1_astronaut_planet_7{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b3.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:6.09s, 6.3s;}
-.main_content_1_astronaut_planet_8{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b4.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:6.96s, 7.2s;}
-.main_content_1_astronaut_planet_9{position:absolute; opacity:0; display:; height:8vw; width:9vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:7.83s, 8.1s;}
+.main_content_1_astronaut_planet_1{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b1.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:0.87s, 0.9s;}
+.main_content_1_astronaut_planet_2{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:1.74s, 1.8s;}
+.main_content_1_astronaut_planet_3{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b3.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:2.61s, 2.7s;}
+.main_content_1_astronaut_planet_4{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b4.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:3.48s, 3.6s;}
+.main_content_1_astronaut_planet_5{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b1.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:4.35s, 4.5s;}
+.main_content_1_astronaut_planet_6{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:5.22s, 5.4s;}
+.main_content_1_astronaut_planet_7{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b3.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:6.09s, 6.3s;}
+.main_content_1_astronaut_planet_8{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b4.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:6.96s, 7.2s;}
+.main_content_1_astronaut_planet_9{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:forwards, forwards; animation-timing-function:linear; animation-delay:7.83s, 8.1s;}
 
-.cont_main_astro_move{position:absolute; background-color: #4158D0; top:-5vw; height: auto; width: auto; }
+.cont_main_astro_move{position:absolute; background-color: #4158D0; top:-10vw; height: auto; width: auto; }
 
-@keyframes blob{from{transform:rotate(0deg)translateY(44vw)rotate(0deg)} to{transform:rotate(360deg)translateY(44vw)rotate(-360deg)}}
+.main_content_2_about{position: absolute; height:199vw; width:100%; top:199vw; left:0vw ; background-image:url("stars.png"); background-repeat: no-repeat; background-size:cover;  overflow-x:hidden;}
+.main_content_1_about_gif{position: absolute; height:120vw; width:149vw; top:25vw; left:-32vw; background:; background-image:url("back_2.gif"); background-repeat: no-repeat; background-size:110% 110%;}
+.main_content_1_about_gif_star_cover{position: absolute; height:140vw; width:100%; top:10vw; left:0vw; background-image: url("stars.png"); background-repeat: no-repeat; background-size: 120% 120%;}
+.main_content_1_about_logo{position: absolute; height:90vw; width:90vw; top:42vw; left:7vw; background-image: url("Group\ 13889.png"); background-repeat: no-repeat; background-size: 100% 100%;}
+.main_content_2_about_top_animaiton_div{position: absolute; top:0vw; left:0vw; height: 20vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
+.main_content_2_about_top_animaiton_div_glow_div{position: absolute; height:1vw; width:100%; top:20vw; left:0vw; background-color: white; animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
+.main_content_2_about_top_animaiton_div_p_1{position: absolute; color:white; top:-1vw; left:default; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear;}
+.main_content_2_about_top_animaiton_div_p_2{position: absolute; color:white; top:-1vw; left:-30vw; font-size:10vw; font-family: font1; animation:5s about_move_p_2 infinite linear; animation-delay:3s;}
+
+@keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
 @keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
 @keyframes reveal_main_1_head {from{height:55vw;} to{height:0vw;}}
@@ -175,8 +187,10 @@ text-shadow:0vw 0vw 0.5vw white;
 @keyframes menu_line_reveal{from{left:1000vw;} to{left:1.5vw;}}
 @keyframes astronaut_float{from{top:24vw;} to{top:21vw;}}
 @keyframes planets_reveal{from{opacity:0;} to{opacity:1;}}
-@keyframes stars{0%{transform:translateX(100%);} to{transform:translateX(-100%);}}
-/*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.*/
+@keyframes about_move_p_1{from{left:100vw;} to{left:-20vw;}}
+@keyframes about_move_p_2{from{left:100vw;} to{left:-20vw;}}
+@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}
+/*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.-- Done without js.*/
 
 
 }
@@ -209,12 +223,12 @@ text-shadow:0vw 0vw 0.5vw white;
 
 
 
-
+<div class="top_div_horizontal_line"></div>
 <div class="top_div">
 	<div class="top_div_animation"></div>
 <div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div>
 <div class="top_div_vertical_line"></div>
-<div class="top_div_horizontal_line"></div>
+
 <div class="top_div_menu">
 		<div class="menu_line_1"></div>
 		<div class="menu_line_2"></div>
@@ -245,6 +259,19 @@ text-shadow:0vw 0vw 0.5vw white;
 		<div class="main_content_1_astronaut_planet_7" id="planets7"></div>
 		<div class="main_content_1_astronaut_planet_8" id="planets8"></div>
 		<div class="main_content_1_astronaut_planet_9" id="planets9"></div>
+	</div>
+</div>
+
+<div class="options"></div>
+
+<div class="main_content_2_about">
+	<div class="main_content_1_about_gif"></div>
+	<div class="main_content_1_about_gif_star_cover"></div>
+	<div class="main_content_1_about_logo"></div>
+	<div class="main_content_2_about_top_animaiton_div">
+		<p class="main_content_2_about_top_animaiton_div_p_1">About</p>
+		<p class="main_content_2_about_top_animaiton_div_p_2">About</p>
+		<div class="main_content_2_about_top_animaiton_div_glow_div"></div>
 	</div>
 </div>
 
