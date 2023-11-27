@@ -309,6 +309,11 @@ text-shadow:0vw 0vw 0.5vw white;
 @keyframes menu_dereveal_reg{from{opacity:1;} to{opacity:0;}}
 @keyframes menu_box_dereveal{from{height:90vw;} to{height:0vw;}}
 @keyframes menu_box_none{from{display:block;} to{display:none;}}
+@keyframes menu_line_1{from{width:5.5vw;} to{width:14vw;}}
+@keyframes menu_line_3{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_1_renew{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_3_renew{from{width:5.5vw;} to{width:14vw;}}
+
 
 /*@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}*/
 @keyframes move1{from{top:74vw;} to{top:70vw;}}
@@ -360,9 +365,9 @@ text-shadow:0vw 0vw 0.5vw white;
 
 <div class="top_div_menu" id="top_div_menu">
 		<button class="top_div_menu_button" onclick="menu()"></button>
-		<div class="menu_line_1"></div>
+		<div class="menu_line_1" id="menu_line_1"></div>
 		<div class="menu_line_2"></div>
-		<div class="menu_line_3"></div>
+		<div class="menu_line_3" id="menu_line_3"></div>
 	</div>
 </div>
 
@@ -486,6 +491,8 @@ var about=document.getElementById("about");
 var gall=document.getElementById("gallery");
 var team=document.getElementById("team");
 var reg=document.getElementById("register");
+var line1=document.getElementById("menu_line_1");
+var line3=document.getElementById("menu_line_3");
 
 if(a.style.height==="0vw"){
 a.style.animation="0.5s menu_box_reveal forwards";
@@ -499,6 +506,8 @@ team.style.animationDelay="0.6s";
 reg.style.animation="1s menu_reveal_reg forwards";
 reg.style.animationDelay="0.8s";
 a.style.height="90vw";
+line1.style.animation="0.5s menu_line_1 forwards";
+line3.style.animation="0.5s menu_line_3 forwards";
 }
 else{
 event_s.style.animation=".2s menu_dereveal_events forwards";
@@ -513,6 +522,8 @@ reg.style.animation="0.2s menu_dereveal_reg forwards";
 reg.style.animationDelay="0s";
 a.style.animation="2s menu_box_dereveal forwards";
 a.style.height="0vw";
+line1.style.animation="0.5s menu_line_1_renew forwards";
+line3.style.animation="0.5s menu_line_3_renew forwards";
 
 }
 }
