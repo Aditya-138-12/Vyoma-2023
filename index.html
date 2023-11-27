@@ -128,7 +128,7 @@ text-shadow:0vw 0vw 0.5vw white;
 .top_menu{display:none;}
 
 
-.options{position:absolute; display:; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000;}
+.options{position:absolute; display:; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000; overflow:hidden;}
 .options_events{position:absolute; font-size:10vw; font-family:font1; left:35vw; top:10vw; letter-spacing:.5vw; opacity:0;}
 .options_abt{position:absolute; font-size:10vw; font-family:font1; left:35.8vw; top:23vw; letter-spacing:.5vw; opacity:0;}
 .options_gall{position:absolute; font-size:10vw; font-family:font1; left:34vw; top:36vw; letter-spacing:.5vw; opacity:0;}
@@ -158,7 +158,7 @@ text-shadow:0vw 0vw 0.5vw white;
 .head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 .head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 
-.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden;}
+.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden; transition:1s ease;}
 .main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.2s reveal_astronaut forwards; animation-delay: 0.15s;}
 .main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s astronaut_float infinite ease-in; animation-direction: alternate-reverse;}
 .main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:27vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent;}
@@ -197,26 +197,32 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_3_events_top_animaiton_div_p_1{position: absolute; color:white; top:-10vw; left:default; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear;}
 .main_content_3_events_top_animaiton_div_p_2{position: absolute; color:white; top:-10vw; left:-30vw; font-size:10vw; font-family: font1; animation:5s about_move_p_2 infinite linear; animation-delay:3s;}
 
-.main_content_3_events_main_box_1{position:absolute; top:15vw; left:6vw; height:100vw; width:88%; background-color:rgba(255,255,255,0.8); border-radius:10vw; transform:rotate(0deg);}
+.main_content_3_events_main_box_1{position:absolute; top:25vw; left:6vw; height:92vw; width:88%; background-color:rgba(255,255,255,0.8); border-radius:10vw; transform:rotate(0deg);}
 .main_content_3_events_main_box_1_heading{position:absolute; top:-4vw; left:9vw; font-size:10vw; font-family:steamy;}
 .main_content_3_events_main_box_1_p_1{position:absolute; top:50vw; left:27vw; font-size:8vw; font-family:steamy;}
 .main_content_3_events_main_box_1_photo_1{position:absolute; top:20vw; left:9vw; height:33vw; width:80%; background-image:url("box1_photo.png"); background-repeat:no-repeat; background-size:100% 100%;}
 .main_content_3_events_main_box_1_see_events_button{position:absolute; height:13vw; width:40vw; background-color:blue; border-radius:10vw; left:24.5vw; top:72vw; box-shadow:0 0.5vw 2vw black; animation:1.5s move1 infinite; animation-direction:alternate-reverse;}
 .main_content_3_events_main_box_1_arrow{position:absolute; height:10vw; width:20vw; top:1.5vw; left:9.5vw; background-image:url("arrow.png"); background-repeat:no-repeat; background-size:100% 100%;}
 
-.main_content_3_events_main_box_2{position:absolute; top:15vw; left:100vw; height:100vw; width:88%; background-color:rgba(255,255,255,0.8); border-radius:10vw; transform:rotate(0deg);}
+.main_content_3_events_main_box_2{position:absolute; top:25vw; left:100vw; height:92vw; width:88%; background-color:rgba(255,255,255,0.8); border-radius:10vw; transform:rotate(0deg);}
 .main_content_3_events_main_box_2_heading{position:absolute; top:-4vw; left:15vw; font-size:10vw; font-family:steamy;}
 .main_content_3_events_main_box_2_p_1{position:absolute; top:50vw; left:27vw; font-size:8vw; font-family:steamy;}
 .main_content_3_events_main_box_2_photo_1{position:absolute; top:20vw; left:9vw; height:33vw; width:80%; background-image:url("box2_photo.png"); background-repeat:no-repeat; background-size:100% 100%;}
 .main_content_3_events_main_box_2_see_events_button{position:absolute; height:13vw; width:40vw; background-color:blue; border-radius:10vw; left:24.5vw; top:72vw; box-shadow:0 0.5vw 2vw black; animation:1.5s move1 infinite; animation-direction:alternate-reverse;}
 .main_content_3_events_main_box_2_arrow{position:absolute; height:10vw; width:20vw; top:1.5vw; left:9.5vw; background-image:url("arrow.png"); background-repeat:no-repeat; background-size:100% 100%;}
 
+.main_content_3_events_main_box_3{position:absolute; top:0vw; left:100vw; height:92vw; width:88%; border-radius:10vw; transform:rotate(0deg); background: rgb(131,58,180); background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 84%, rgba(252,176,69,1) 100%);}
+.main_content_3_events_main_box_3_see_events_button{position:absolute; height:13vw; width:40vw; background-color:blue; border-radius:10vw; left:19.5vw; top:72vw; box-shadow:0 0.5vw 2vw black; animation:1.5s move1 infinite; animation-direction:alternate-reverse;}
+.main_content_3_events_main_box_3_arrow{position:absolute; height:10vw; width:20vw; top:1.5vw; left:9.5vw; background-image:url("arrow.png"); background-repeat:no-repeat; background-size:100% 100%;}
+.main_content_3_events_main_box_3_p{position:absolute; font-size:12vw; left:5vw; top:25vw; font-family:steamy; color:white;}
+
 .main_content_3_events_scroll_box::-webkit-scrollbar {
   display: none;
 }
+
 .main_content_3_events_scroll_box{position:absolute; top:0vw; left:0vw; height:120vw; width:100%; overflow-y:scroll; scrollbar-width:none;}
 
-.box_2{position:absolute; width:20vw; height:20vw; left:75vw;}
+.box_2{position:absolute; display:; width:20vw; height:20vw; left:170vw; background-color:;}
 
 .main_content_4_sponsors{position:absolute; height:160vw; width:100%; top:616vw; left:0vw; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; border-bottom:1vw solid white;}
 .main_content_4_sponsors_top_animaiton_div{position: absolute; top:0vw; left:0vw; height: 10vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
@@ -237,10 +243,10 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_4_sponsors_2_p{position:absolute; top:26vw; left:7vw; font-size:8vw; font-family:steamy; opacity:0;  transition:1s ease;}
 .main_content_4_sponsors_2:hover .main_content_4_sponsors_2_p{opacity:1; transition:1s ease;}
 
-.main_content_5_footer{position:absolute; height:195vw; width:100%; top:777vw; left:0vw;background: rgb(2,0,36);
+.main_content_5_footer{position:absolute; height:195vw; width:100%; top:776.5vw; left:0vw;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
 .main_content_5_footer_top_div{background-color:none; width:100%; height:35vw;}
-.main_content_5_footer_top_div_p1{position:absolute; font-size:4.5vw; color:orange; left:27vw; top:5vw; text-align:center; cursor:default;}
+.main_content_5_footer_top_div_p1{position:absolute; font-size:4.5vw; color:orange; left:27vw; top:5vw; text-align:center; cursor:default; font-weight:100;}
 .main_content_5_footer_top_div_p2{position:absolute; font-size:4.5vw; color:orange; left:4vw; top:13vw; text-align:center; cursor:default;}
 .main_content_5_footer_top_div_p3{position:absolute; font-size:4.5vw; color:orange; left:20vw; top:23vw; text-align:center; cursor:default;}
 .main_content_5_footer_top_div_photo1{position:absolute; height:10vw; width:10vw; top:4vw; left:4vw; background-image:url("dhehs-834x1024-1.png"); background-repeat:no-repeat; background-size:100% 100%;}
@@ -281,6 +287,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 .main_content_5_footer_bottom_addr_h{position:absolute; font-size:8vw; top:127vw; left:36vw; font-family:steamy; color:white; animation:1s color_change infinite linear; animation-direction:alternate-reverse; cursor:default;}
 .main_content_5_footer_bottom_addr_p{position:absolute; font-size:5.5vw; top:143vw; text-align:center; left:10vw; font-family:font1; color:white; animation:1s color_change infinite linear; animation-direction:alternate-reverse; cursor:default;}
+
+.flashmob_trial{position:absolute; height:185vw; width:100%; top:23vw; left:0vw; background-image:url("flashmob.jpeg"); background-repeat:no-repeat; background-size:100% 100%; transition:1s ease; cursor:default; display:none;}
+.flashmob_trial_photo{position:absolute; color:white; font-family:steamy; font-size:17vw; top:100vw; left:1vw; font-weight:normal; opacity:0.9;}
+.flash_mob_date{position:absolute; color:white; font-family:font2; font-size:10vw; left:5vw; top:130vw;}
+.flashmob_close{position:absolute; color:red; width:7vw; height:7vw; background-color:red; border:transparent; border-radius:50%; right:2vw; top:5vw;}
 
 @keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
@@ -379,7 +390,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	<p class="head_p_3">18 - 25 December</p>
 </div>
 
-<div class="main_content_1_rotating_planets_with_astronaut">
+<div class="main_content_1_rotating_planets_with_astronaut" id="main_content_1_rotating_planets_with_astronaut">
 	<div class="main_content_1_rotating_planets_with_astronaut_background_image_1"></div>
 	<div class="main_content_1_rotating_planets_with_astronaut_animation"></div>
 	<div class="cont_main_astro_move">
@@ -434,6 +445,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 			<div class="main_content_3_events_main_box_2_arrow"></div>
 		</div>
 	
+	<div class="main_content_3_events_main_box_3">
+		<p class="main_content_3_events_main_box_3_p">FLASHMOB</p>
+		<div class="main_content_3_events_main_box_3_see_events_button" id="flash_mob_display">
+			<button class="flash_mob_button" onclick="flash_mob()" style="position:absolute; height:100%; width:100%; top:0vw; left:0vw; background:transparent; border:none; z-index:100;"></button>
+			<div class="main_content_3_events_main_box_3_arrow"></div>
+		</div>
+	</div>
+	
 	<div class="box_2"></div>
 	</div>
 	</div>
@@ -482,6 +501,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	</div>
 </div>
 
+<div class="flashmob_trial" id="flash_trial" style="display:none;">
+	<p class="flashmob_trial_photo">FLASHMOB</p>
+	<p class="flash_mob_date">15 December, 2023</p>
+	<button class="flashmob_close" onclick="flash_mob_close()"></button>
+</div>
+
 <script type="text/javascript">
 
 function menu(){
@@ -494,6 +519,8 @@ var team=document.getElementById("team");
 var reg=document.getElementById("register");
 var line1=document.getElementById("menu_line_1");
 var line3=document.getElementById("menu_line_3");
+var back_blur=document.getElementById("main_content_1_rotating_planets_with_astronaut");
+var back_blur_2=document.getElementById("flash_trial");
 
 if(a.style.height==="0vw"){
 a.style.animation="0.5s menu_box_reveal forwards";
@@ -509,6 +536,9 @@ reg.style.animationDelay="0.8s";
 a.style.height="90vw";
 line1.style.animation="0.5s menu_line_1 forwards";
 line3.style.animation="0.5s menu_line_3 forwards";
+back_blur.style.filter="blur(5vw)";
+document.body.style.overflow="hidden";
+back_blur_2.style.filter="blur(5vw)";
 }
 else{
 event_s.style.animation=".2s menu_dereveal_events forwards";
@@ -525,7 +555,31 @@ a.style.animation="2s menu_box_dereveal forwards";
 a.style.height="0vw";
 line1.style.animation="0.5s menu_line_1_renew forwards";
 line3.style.animation="0.5s menu_line_3_renew forwards";
+back_blur.style.filter="blur(0vw)";
+document.body.style.overflow="scroll";
+back_blur_2.style.filter="blur(0vw)";
 
+}
+}
+
+function flash_mob(){
+var flash=document.getElementById("flash_mob_display");
+var flash_mob_page=document.getElementById("flash_trial");
+var scrol=window.scrollY;
+console.log("called2")
+if(flash_mob_page.style.display==="none"){
+	window.scrollTo({top:0,behavior:"smooth"});
+	flash_mob_page.style.display="block";
+}
+if(window.scrollTo({top:0})){document.body.style.overflow="hidden";}
+}
+
+function flash_mob_close(){
+var flash=document.getElementById("flash_mob_display");
+var flash_mob_page=document.getElementById("flash_trial");
+if(flash_mob_page.style.display==="block"){
+flash_mob_page.style.display="none";
+window.scrollTo({top:1830,behavior:"smooth"});
 }
 }
 </script>
