@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 <style>
+html{scroll-behavior:smooth;}
 @font-face{
 font-family:vampire;
 src:url("Vampire Wars Italic.ttf");
@@ -388,8 +389,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 
 <div class="options" id="options" style="height:0vw;">
-	<a href="#" class="options_events" id="events">Events</a>
-	<a href="#" class="options_abt" id="about">About</a>
+	<a href="test_fest_events.html" class="options_events" id="events">Events</a>
+	<a href="#main_content_2_about" class="options_abt" id="about" onclick="menu()">About</a>
 	<a href="#" class="options_gall" id="gallery">Gallery</a>
 	<a href="#" class="options_team" id="team">Team</a>
 	<a href="#" class="options_reg" id="register">Register</a>
@@ -399,7 +400,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div class="top_div_horizontal_line"></div>
 <div class="top_div">
 	<div class="top_div_animation"></div>
-<div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div>
+<div class="top_div_tittle"  id="top"><p class="top_div_tittle_p">VYOMA</p></div>
 <div class="top_div_vertical_line"></div>
 
 <div class="top_div_menu" id="top_div_menu">
@@ -468,9 +469,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<p class="main_content_3_events_main_box_2_heading">Fun Activities</p>
 		<p class="main_content_3_events_main_box_2_p_1">See Events</p>
 		<div class="main_content_3_events_main_box_2_photo_1"></div>
-		<div class="main_content_3_events_main_box_2_see_events_button">
+		<a href="test_fest_events.html#main_2_fun_events"><div class="main_content_3_events_main_box_2_see_events_button">
 			<div class="main_content_3_events_main_box_2_arrow"></div>
-		</div>
+		</div></a>
 	</div>
 	
 	<div class="main_content_3_events_main_box_3">
@@ -478,14 +479,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<div class="main_content_3_events_main_box_3_photo_1"></div>
 		<p class="main_content_3_events_main_box_3_p_1">See Events</p>
 		<div class="main_content_3_events_main_box_3_see_events_button" id="flash_mob_display">
-			<button class="flash_mob_button" onclick="flash_mob()" style="position:absolute; height:100%; width:100%; top:0vw; left:0vw; background:transparent; border:none; z-index:100;"></button>
+			<button class="flash_mob_button" onclick="flash_mob()" style="cursor:pointer; position:absolute; height:100%; width:100%; top:0vw; left:0vw; background:transparent; border:none; z-index:100;"></button>
 			<div class="main_content_3_events_main_box_3_arrow"></div>
 		</div>
 	</div>
 	
 	<div class="main_content_3_events_main_box_4">
 		<p class="main_content_3_events_main_box_4_heading">Amphi Theatre</p>
-		<p class="main_content_3_events_main_box_4_p_1">See Events</p>
+		<p class="main_content_3_events_main_box_4_p_1">See Details</p>
 		<div class="main_content_3_events_main_box_4_photo_1"></div>
 		<div class="main_content_3_events_main_box_4_see_events_button">
 			<div class="main_content_3_events_main_box_4_arrow"></div>
@@ -494,7 +495,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	
 	<div class="main_content_3_events_main_box_5">
 		<p class="main_content_3_events_main_box_5_heading">ADITYA L1</p>
-		<p class="main_content_3_events_main_box_5_p_1">See Events</p>
+		<p class="main_content_3_events_main_box_5_p_1">See Details</p>
 		<div class="main_content_3_events_main_box_5_photo_1"></div>
 		<div class="main_content_3_events_main_box_5_see_events_button">
 			<div class="main_content_3_events_main_box_5_arrow"></div>
@@ -503,7 +504,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	
 	<div class="main_content_3_events_main_box_6">
 		<p class="main_content_3_events_main_box_6_heading">CHANDRAYAN</p>
-		<p class="main_content_3_events_main_box_6_p_1">See Events</p>
+		<p class="main_content_3_events_main_box_6_p_1">See Details</p>
 		<div class="main_content_3_events_main_box_6_photo_1"></div>
 		<div class="main_content_3_events_main_box_6_see_events_button">
 			<div class="main_content_3_events_main_box_6_arrow"></div>
@@ -550,8 +551,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<a href="#" class="main_content_5_footer_links_follow_twitter_text_link_tw">Twitter</a>
 		<a href="#" class="main_content_5_footer_links_follow_youtube_text_link_yt">Youtube</a>
 		<p class="main_content_5_footer_links_more_heading">More</p>
-		<a href="#" class="main_content_5_footer_links_more_home">Home</a>
-		<a href="#" class="main_content_5_footer_links_more_sjcit">SJCIT</a>
+		<a href="#top" class="main_content_5_footer_links_more_home">Home</a>
+		<a href="https://sjcit.ac.in/" class="main_content_5_footer_links_more_sjcit">SJCIT</a>
 		<a href="#" class="main_content_5_footer_links_more_register">Register</a>
 		<p class="main_content_5_footer_bottom_addr_h">Address</p>
 		<p class="main_content_5_footer_bottom_addr_p">SJC Institute of technology<br>Chickballapur,-562101 Karnataka, India</p>
