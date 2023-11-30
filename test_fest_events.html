@@ -249,7 +249,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 @keyframes reveal_scale{from{transform:scale(0); opacity:0;} to{transform:scale(1); opacity:1;}}
 @keyframes fade_out{from{opacity:1;} to{opacity:0;}}
 @keyframes fade_out_box{from{opacity:1; left:6vw;} to{opacity:0; left:-96vw;}}
-
+@keyframes btn_anm{0%{letter-spacing:default;} 50%{letter-spacing:1.5vw; left:23vw;} 100%{letter-spacing:default; left:default;}}
 
 }
 
@@ -290,7 +290,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	<div class="main_1_tech_event_1_photo_1_inside"></div>
 		<div class="main_1_tech_event_1_name_div">
 			<button class="main_1_tech_event_1_name_div_button" onclick="space_quiz()"></button>
-			<p class="main_1_event_1_tech_name_div_p">Space Quiz</p>
+			<p class="main_1_event_1_tech_name_div_p" id="main_1_event_1_tech_name_div_p">Space Quiz</p>
 		</div>
 	
 	<div class="main_1_tech_event_2_photo_1"></div>
@@ -465,6 +465,7 @@ var space_quiz_dialogue_box_photo=document.getElementById("space_quiz_dialogue_b
 var space_quiz_dialogue_box_discription=document.getElementById("space_quiz_dialogue_box_discription");
 var space_quiz_dialogue_box_register=document.getElementById("space_quiz_dialogue_box_register");
 var space_quiz_dialogue_box_close=document.getElementById("space_quiz_dialogue_box_close");
+var space_quiz_p=document.getElementById("main_1_event_1_tech_name_div_p");
 console.log("calledSpace");
 if(space_quiz_box.style.left==="-96vw"){
 		space_quiz_box.style.animation="1s box_reveal forwards";
@@ -473,6 +474,7 @@ if(space_quiz_box.style.left==="-96vw"){
 		space_quiz_dialogue_box_discription.style.animation="0.5s reveal forwards";space_quiz_dialogue_box_discription.style.animationDelay="1.2s";
 		space_quiz_dialogue_box_register.style.animation="0.5s reveal_scale forwards";space_quiz_dialogue_box_register.style.animationDelay="1.2s";
 		space_quiz_dialogue_box_close.style.animation="0.5s reveal_scale forwards";space_quiz_dialogue_box_close.style.animationDelay="1.4s";
+		space_quiz_p.style.animation="1s btn_anm";
 		space_quiz_box.style.left="6vw";
 		document.body.style.overflow="hidden";
 	}
@@ -487,6 +489,7 @@ var space_quiz_dialogue_box_photo=document.getElementById("space_quiz_dialogue_b
 var space_quiz_dialogue_box_discription=document.getElementById("space_quiz_dialogue_box_discription");
 var space_quiz_dialogue_box_register=document.getElementById("space_quiz_dialogue_box_register");
 var space_quiz_dialogue_box_close=document.getElementById("space_quiz_dialogue_box_close");
+var space_quiz_p=document.getElementById("main_1_event_1_tech_name_div_p");
 console.log("calledSpace");
 if(space_quiz_box.style.left==="6vw"){
 		space_quiz_box.style.animation="1s fade_out_box forwards";
@@ -495,6 +498,7 @@ if(space_quiz_box.style.left==="6vw"){
 		space_quiz_dialogue_box_discription.style.animation="1s fade_out forwards";
 		space_quiz_dialogue_box_register.style.animation="1s fade_out forwards";
 		space_quiz_dialogue_box_close.style.animation="1s fade_out forwards";
+		space_quiz_p.style.animation="none";
 		space_quiz_box.style.left="-96vw";
 		document.body.style.overflow="scroll";
 	}
