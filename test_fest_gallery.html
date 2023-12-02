@@ -1,0 +1,269 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+html{scroll-behavior:smooth;}
+@font-face{
+font-family:vampire;
+src:url("Vampire Wars Italic.ttf");
+}
+
+@font-face{
+font-family:rc;
+src:url("R&C-Demo.otf");
+}
+
+@font-face{
+font-family:charge;
+src:url("6809 Chargen.otf");
+}
+
+@font-face{
+font-family:font1;
+src:url("Cyrulik-SharpBold.ttf");
+}
+
+@font-face{
+font-family:font2;
+src:url("Aguante.otf");
+}
+
+@font-face{
+font-family:kannada;
+src:url("Nudi 17 e Regular.ttf");
+}
+
+@font-face{
+font-family:glitch;
+src:url("Demosdcyberglitch-yw6GM.ttf");
+}
+
+@font-face{
+font-family: font_no;
+src: url("WolfalconRegular-RpjW3.ttf");
+}
+
+body{background:black;}
+
+a{text-decoration:none; color:white; font-family:JetBrains Mono,monospace;}
+
+
+@media (max-width:480px){
+
+.options{position:absolute; display:; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000; overflow:hidden;}
+.options_events{position:absolute; font-size:10vw; font-family:font1; left:35vw; top:10vw; letter-spacing:.5vw; opacity:0;}
+.options_abt{position:absolute; font-size:10vw; font-family:font1; left:35.8vw; top:23vw; letter-spacing:.5vw; opacity:0;}
+.options_gall{position:absolute; font-size:10vw; font-family:font1; left:34vw; top:36vw; letter-spacing:.5vw; opacity:0;}
+.options_team{position:absolute; font-size:10vw; font-family:font1; left:37.5vw; top:49vw; letter-spacing:.5vw; opacity:0;}
+.options_reg{position:absolute; font-size:10vw; font-family:font1; left:32.5vw; top:62vw; letter-spacing:.5vw; opacity:0;}
+
+.top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%; overflow:hidden;}
+.top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
+
+.top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
+.top_div_tittle_p{opacity:0; font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:2s opacity_tittle forwards; animation-delay:0.3s;}
+
+.top_div_vertical_line{position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
+
+.top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
+
+.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; z-index:10000;}
+.top_div_menu_button{position:absolute; height:100%; width:100%; background-color:transparent; border:none;}
+.top_div_menu:hover .options{display:block;}
+.menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.1s;}
+.menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.17s;}
+.menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.22s;}
+
+.main_1_gallery{position:absolute; width:100%; height:188vw; top:23vw; left:0vw; background-image:url("stars.png"); background-repeat:no-repeat; background-size:110% 110%; overflow:hidden;}
+.main_1_gallery_top_div{position:absolute; top:0vw; left:0vw; height:10vw; width:100%; border-bottom:1vw solid white;}
+.main_1_gallery_top_div_p{position:absolute; color:white; font-family:font1; font-size:10vw; top:-10vw; animation:3s about_move_p_1 infinite; animation-timing-function:linear;}
+.main_1_gallery_display_photo{position:absolute; width:100%; height:100vw; bottom:0vw; left:0vw; background-image:url("photo_camera.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:10000;}
+.main_1_gallery_display_photo_effect{position:absolute; top:36vw; left:47vw; height:3vw; width:3vw; background-color:white; border-radius:50%;}
+
+.main_1_gallery_display_box{position:absolute; top:10vw; left:0vw; width:100%; height:170vw; background-color:transparent; overflow:scroll;}
+
+.gallery_photo_1_div{position:absolute; top:5vw; left:4vw; height:120vw; width:20vw; background-image:url("https://i.postimg.cc/qvpSKcTc/gallery-1.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_top infinite linear alternate-reverse;}
+.gallery_photo_2_div{position:absolute; top:19vw; left:26vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/T3hjBhqM/gallery-2.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_low infinite linear alternate-reverse; animation-delay:2.5s;}
+.gallery_photo_3_div{position:absolute; top:5vw; left:48vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/Hx0bbMH5/gallery-3.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_top infinite linear alternate-reverse;}
+.gallery_photo_4_div{position:absolute; top:19vw; left:70vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/QtZpBmLh/gallery-4.jpg"); background-repeat:no-repeat; background-size:cover;animation:2.5s float_low infinite linear alternate-reverse; animation-delay:2.5s;}
+.gallery_photo_5_div{position:absolute; top:5vw; left:92vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/4396NMSW/gallery-5.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_top infinite linear alternate-reverse;}
+.gallery_photo_6_div{position:absolute; top:19vw; left:114vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/sxjswMQb/gallery-6.jpg"); background-repeat:no-repeat; background-size:cover;animation:2.5s float_low infinite linear alternate-reverse; animation-delay:2.5s;}
+.gallery_photo_7_div{position:absolute; top:5vw; left:136vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/kg168dZn/gallery-7.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_top infinite linear alternate-reverse;}
+.gallery_photo_8_div{position:absolute; top:19vw; left:158vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/cHqJM1cN/gallery-8.jpg"); background-repeat:no-repeat; background-size:cover;animation:2.5s float_low infinite linear alternate-reverse; animation-delay:2.5s;}
+.gallery_photo_9_div{position:absolute; top:5vw; left:180vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/7h9Yk3rx/gallery-9.jpg"); background-repeat:no-repeat; background-size:cover; animation:2.5s float_top infinite linear alternate-reverse;}
+.gallery_photo_10_div{position:absolute; top:19vw; left:202vw; height:120vw; width:20vw; background-color:blue; background-image:url("https://i.postimg.cc/RVPVpLTd/gallery-10.jpg"); background-repeat:no-repeat; background-size:cover;animation:2.5s float_low infinite linear alternate-reverse; animation-delay:2.5s;}
+
+.gallery_photo_1_div_anm_cover{position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color:#db0000; animation:0.8s reveal_1_gall forwards; animation-delay:0.1s;}
+.gallery_photo_2_div_anm_cover{position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color:#000000; animation:0.8s reveal_1_gall forwards; animation-delay:0.2s;}
+.gallery_photo_3_div_anm_cover{position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color:#ffffff; animation:0.8s reveal_1_gall forwards; animation-delay:0.3s;}
+.gallery_photo_4_div_anm_cover{position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color:#564d4d; animation:0.8s reveal_1_gall forwards; animation-delay:0.4s;}
+.gallery_photo_5_div_anm_cover{position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color:#831010; animation:0.8s reveal_1_gall forwards; animation-delay:0.5s;}
+
+.gallery_photo_1_display_full{position:absolute; top:10.8vw; left:-83vw; height:160vw; width:82vw; background-image:url(""); background-repeat:no-repeat; background-size:100% 100%; z-index:10000;}
+
+@keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
+@keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
+@keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
+@keyframes reveal_main_1_head {from{height:55vw;} to{height:0vw;}}
+@keyframes reveal_astronaut {from{height:100%;} to{height: 0vw;}}
+@keyframes scale_head_p{from{scale:5;} to{scale:1;}}
+@keyframes opacity_tittle{from{opacity:0; scale:0.8;} to{opacity: 1; scale: 1;}}
+@keyframes menu_line_reveal{from{left:1000vw;} to{left:1.5vw;}}
+@keyframes astronaut_float{from{top:24vw;} to{top:21vw;}}
+@keyframes planets_reveal{from{opacity:0;} to{opacity:1;}}
+@keyframes about_move_p_1{from{left:100vw;} to{left:-20vw;}}
+@keyframes about_move_p_2{from{left:100vw;} to{left:-20vw;}}
+@keyframes sponsors_move_p_1{from{left:100vw;} to{left:-40vw;}}
+@keyframes sponsors_move_p_2{from{left:100vw;} to{left:-40vw;}}
+@keyframes color_change{from{text-shadow:0vw 0vw 0vw white;} to{text-shadow:0vw 0vw 1vw white;}}
+@keyframes menu_box_reveal{from{height:0vw;} to{height:90vw;}}
+@keyframes menu_reveal_events{from{opacity:0; left:0vw;} to{opacity:1; left:35vw;}}
+@keyframes menu_reveal_abt{from{opacity:0; left:0vw;} to{opacity:1; left:35.8vw;}}
+@keyframes menu_reveal_gall{from{opacity:0; left:0vw;} to{opacity:1; left:34vw;}}
+@keyframes menu_reveal_team{from{opacity:0; left:0vw;} to{opacity:1; left:37.5vw;}}
+@keyframes menu_reveal_reg{from{opacity:0; left:0vw;} to{opacity:1; left:32.5vw;}}
+@keyframes menu_dereveal_events{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_abt{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_gall{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_team{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_reg{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_box_dereveal{from{height:90vw;} to{height:0vw;}}
+@keyframes menu_box_none{from{display:block;} to{display:none;}}
+@keyframes menu_line_1{from{width:5.5vw;} to{width:14vw;}}
+@keyframes menu_line_3{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_1_renew{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_3_renew{from{width:5.5vw;} to{width:14vw;}}
+@keyframes reveal_1_gall{from{height:100%;} to{height:0%;}}
+@keyframes float_top{from{top:5vw;} to{top:10vw;}}
+@keyframes float_low{from{top:19vw;} to{top:24vw;}}
+
+
+/*@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}*/
+@keyframes move1{from{top:74vw;} to{top:70vw;}}
+/*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.-- Done without js.*/
+}
+
+</style>
+</head>
+<body>
+
+<div class="options" id="options" style="height:0vw;">
+	<a href="test_fest_events.html" class="options_events" id="events">Events</a>
+	<a href="index.html#main_content_2_about" class="options_abt" id="about" onclick="menu()">About</a>
+	<a href="#" class="options_gall" id="gallery">Gallery</a>
+	<a href="#" class="options_team" id="team">Team</a>
+	<a href="#" class="options_reg" id="register">Register</a>
+</div>
+
+
+<div class="top_div_horizontal_line"></div>
+<div class="top_div">
+	<div class="top_div_animation"></div>
+<div class="top_div_tittle"  id="top"><p class="top_div_tittle_p">VYOMA</p></div>
+<div class="top_div_vertical_line"></div>
+
+<div class="top_div_menu" id="top_div_menu">
+		<button class="top_div_menu_button" onclick="menu()"></button>
+		<div class="menu_line_1" id="menu_line_1"></div>
+		<div class="menu_line_2"></div>
+		<div class="menu_line_3" id="menu_line_3"></div>
+	</div>
+</div>
+
+
+<div class="main_1_gallery">
+	<div class="main_1_gallery_top_div">
+		<p class="main_1_gallery_top_div_p">Gallery</p>
+	</div>
+	<div class="main_1_gallery_display_photo"><div class="main_1_gallery_display_photo_effect"></div></div>
+	
+	<div class="main_1_gallery_display_box">
+		
+		<div class="gallery_photo_1_div" onclick="img_display(this)"><div class="gallery_photo_1_div_anm_cover"></div></div>	
+		<div class="gallery_photo_2_div"  onclick="img_display(this)"><div class="gallery_photo_2_div_anm_cover"></div></div>
+		<div class="gallery_photo_3_div"  onclick="img_display(this)"><div class="gallery_photo_3_div_anm_cover"></div></div>	
+		<div class="gallery_photo_4_div"  onclick="img_display(this)"><div class="gallery_photo_4_div_anm_cover"></div></div>	
+		<div class="gallery_photo_5_div"  onclick="img_display(this)"><div class="gallery_photo_5_div_anm_cover"></div></div>	
+		<div class="gallery_photo_6_div"  onclick="img_display(this)"></div>
+		<div class="gallery_photo_7_div"  onclick="img_display(this)"></div>	
+		<div class="gallery_photo_8_div"  onclick="img_display(this)"></div>	
+		<div class="gallery_photo_9_div"  onclick="img_display(this)"></div>	
+		<div class="gallery_photo_10_div"  onclick="img_display(this)"></div>		
+				
+	</div>
+	<div class="gallery_photo_1_display_full" id="gallery_photo_1_display_full"></div>
+</div>
+
+<script type="text/javascript">
+
+function menu(){
+console.log("called");
+var a=document.getElementById("options")
+var event_s=document.getElementById("events");
+var about=document.getElementById("about");
+var gall=document.getElementById("gallery");
+var team=document.getElementById("team");
+var reg=document.getElementById("register");
+var line1=document.getElementById("menu_line_1");
+var line3=document.getElementById("menu_line_3");
+var back_blur=document.getElementById("main_1_gallery");
+
+if(a.style.height==="0vw"){
+a.style.animation="0.5s menu_box_reveal forwards";
+event_s.style.animation="1s menu_reveal_events forwards";
+about.style.animation="1s menu_reveal_abt forwards";
+about.style.animationDelay="0.2s";
+gall.style.animation="1s menu_reveal_gall forwards";
+gall.style.animationDelay="0.4s";
+team.style.animation="1s menu_reveal_team forwards";
+team.style.animationDelay="0.6s";
+reg.style.animation="1s menu_reveal_reg forwards";
+reg.style.animationDelay="0.8s";
+a.style.height="90vw";
+line1.style.animation="0.5s menu_line_1 forwards";
+line3.style.animation="0.5s menu_line_3 forwards";
+back_blur.style.filter="blur(10vw)";
+document.body.style.overflow="hidden";
+}
+else{
+event_s.style.animation=".2s menu_dereveal_events forwards";
+event_s.style.animationDelay="0s";
+about.style.animation="0.2s menu_dereveal_abt forwards";
+about.style.animationDelay="0s";
+gall.style.animation="0.2s menu_dereveal_gall forwards";
+gall.style.animationDelay="0s";
+team.style.animation="0.2s menu_dereveal_team forwards";
+team.style.animationDelay="0s";
+reg.style.animation="0.2s menu_dereveal_reg forwards";
+reg.style.animationDelay="0s";
+a.style.animation="2s menu_box_dereveal forwards";
+a.style.height="0vw";
+line1.style.animation="0.5s menu_line_1_renew forwards";
+line3.style.animation="0.5s menu_line_3_renew forwards";
+back_blur.style.filter="blur(0vw)";
+document.body.style.overflow="scroll";
+
+}
+}
+
+function img_display(ele){
+	var div_clicked=window.getComputedStyle(ele);
+	const a=div_clicked.backgroundImage;
+	var photo_full=document.getElementById("gallery_photo_1_display_full");
+	console.log(a);
+	const img=a.slice(4,-1).replace(/["|']/g, "");
+	console.log(img);
+	photo_full.style.left="9vw";
+	photo_full.style.backgroundImage=`url('${img}')`;
+	photo_full.style.backgroundRepeat="no-repeat";
+	photo_full.style.backgroundSize="110% 110%";
+	
+}
+
+function img_display_close(){}
+
+</script>
+
+</body>
+</html>
