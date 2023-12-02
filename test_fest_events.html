@@ -85,10 +85,10 @@ a{text-decoration:none; color:white;}
 .main_content_1_top_animaiton_div_p_1{position: absolute; color:white; top:-10vw; left:default; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear;}
 .main_content_1_top_animaiton_div_p_2{position: absolute; color:white; top:-10vw; left:-25vw; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear; animation-delay:1.2s;}
 
-.main_1_tech_event_1_photo_1{position:absolute; height:30vw; width:30vw; top:16vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
-.main_1_tech_event_1_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:30.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
-.main_1_tech_event_1_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:21vw; border-radius:20vw; background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,69,237,1) 57%, rgba(253,29,99,1) 84%);  z-index:1;}
+.main_1_tech_event_1_photo_1{position:absolute; height:30vw; width:30vw; top:16vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100; animation:1s rotate_aman forwards; animation-delay:1s; opacity:0;}
+.main_1_tech_event_1_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:30.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100; animation-name:rotate_inside, rotate_aman; animation-duration:1.5s, 1s; animation-delay:0s, 2s; animation-iteration-count:infinite, 1; animation-timing-function:linear; animation-fill-mode:forwards, forwards; opacity:0;}
+.main_1_tech_event_1_name_div{position:absolute; height:23vw; width:98vw; left:-100vw; top:21vw; border-radius:20vw; background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,69,237,1) 57%, rgba(253,29,99,1) 84%);  z-index:1; animation:2s reveal_aman forwards; animation-delay:0.2s;}
 .main_1_event_1_tech_name_div_p{position:absolute; font-size:12vw; color:white; font-family:steamy; top:-8vw; left:30vw; z-index:-1;}
 .main_1_tech_event_1_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none;}
 
@@ -131,36 +131,47 @@ background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,69,237,1) 57%
 .main_2_fun_event_2_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:50vw; border-radius:20vw; background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,147,69,1) 57%, rgba(253,29,29,1) 84%);  z-index:1;}
 .main_2_event_2_fun_name_div_p{position:absolute; font-size:12vw; color:white; font-family:steamy; top:-8vw; left:30vw;}
+.main_2_tech_event_2_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
+
 
 .main_2_fun_event_3_photo_1{position:absolute; height:30vw; width:30vw; top:74vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
 .main_2_fun_event_3_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:88.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
 .main_2_fun_event_3_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:79vw; border-radius:20vw; background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(119,69,252,1) 57%, rgba(147,29,253,1) 84%);  z-index:1;}
 .main_2_event_3_fun_name_div_p{position:absolute; font-size:10.5vw; color:white; font-family:steamy; top:-6vw; left:28vw; font-weight:;}
+.main_2_tech_event_3_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
+
 
 .main_2_fun_event_4_photo_1{position:absolute; height:30vw; width:30vw; top:103vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
 .main_2_fun_event_4_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:117.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
 .main_2_fun_event_4_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:108vw; border-radius:20vw; background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,212,69,1) 57%, rgba(186,253,29,1) 84%);  z-index:1;}
 .main_2_event_4_fun_name_div_p{position:absolute; font-size:10.5vw; color:white; font-family:steamy; top:-12vw; left:32vw; font-weight:;}
+.main_2_tech_event_4_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
+
 
 .main_2_fun_event_5_photo_1{position:absolute; height:30vw; width:30vw; top:133vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
 .main_2_fun_event_5_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:147.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
 .main_2_fun_event_5_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:138vw; border-radius:20vw; background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(252,69,117,1) 71%, rgba(147,29,253,1) 100%);  z-index:1;}
 .main_2_event_5_fun_name_div_p{position:absolute; font-size:10.5vw; color:white; font-family:steamy; top:-9vw; left:32vw; font-weight:; line-height:9vw;}
+.main_2_tech_event_5_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
+
 
 .main_2_fun_event_6_photo_1{position:absolute; height:30vw; width:30vw; top:163vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
 .main_2_fun_event_6_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:177.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
 .main_2_fun_event_6_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:168vw; border-radius:20vw; background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(107,69,252,1) 71%, rgba(253,29,239,1) 100%);  z-index:1;}
 .main_2_event_6_fun_name_div_p{position:absolute; font-size:10.5vw; color:white; font-family:steamy; top:-4vw; left:32vw; font-weight:; line-height:9vw;}
+.main_2_tech_event_6_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
+
 
 .main_2_fun_event_7_photo_1{position:absolute; height:30vw; width:30vw; top:193vw; left:-1vw; background-image:url("events_1.png"); background-repeat:no-repeat; background-size:100% 100%; z-index:100;}
 .main_2_fun_event_7_photo_1_inside{position:absolute; height:3vw; width:3vw; left:9vw; top:207.5vw; background-image:url("inside.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s rotate_inside infinite linear; animation-direction:; z-index:100;}
 .main_2_fun_event_7_name_div{position:absolute; height:23vw; width:98vw; left:0vw; top:198vw; border-radius:20vw;  background: rgb(131,58,180);
 background: linear-gradient(72deg, rgba(131,58,180,0) 0%, rgba(69,252,129,1) 71%, rgba(201,253,29,1) 100%);   z-index:1;}
 .main_2_event_7_fun_name_div_p{position:absolute; font-size:10.5vw; color:white; font-family:steamy; top:-4vw; left:32vw; font-weight:; line-height:9vw;}
+.main_2_tech_event_7_name_div_button{position:absolute; left:0vw; top:0vw; height:100%; width:100%; background-color:transparent; border-radius:20vw; border:none; z-index:100;}
 
 .main_content_3_footer{position:absolute; height:195vw; width:100%; top:394.8vw; left:0vw;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
@@ -267,6 +278,71 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .carbon_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
 
 
+.brick_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.brick_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:20vw; top:2vw; color:black; opacity:0;} 
+.brick_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("brick_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.brick_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:66vw; opacity:0;}
+.brick_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.brick_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.brick_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.brick_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.brick_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
+
+.reach_target_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.reach_target_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:15vw; top:2vw; color:black; opacity:0;} 
+.reach_target_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("brick_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.reach_target_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:66vw; opacity:0;}
+.reach_target_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.reach_target_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.reach_target_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.reach_target_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.reach_target_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
+
+.ball_in_bucket_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.ball_in_bucket_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:13vw; top:2vw; color:black; opacity:0;} 
+.ball_in_bucket_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("ball_bucket_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.ball_in_bucket_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:63vw; opacity:0;}
+.ball_in_bucket_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.ball_in_bucket_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.ball_in_bucket_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.ball_in_bucket_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.ball_in_bucket_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
+
+.kite_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.kite_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:7vw; top:2vw; color:black; opacity:0;} 
+.kite_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("kite_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.kite_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:63vw; opacity:0;}
+.kite_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.kite_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.kite_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.kite_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.kite_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
+
+.coin_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.coin_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:16vw; top:2vw; color:black; opacity:0;} 
+.coin_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("coin_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.coin_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:63vw; opacity:0;}
+.coin_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.coin_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.coin_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.coin_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.coin_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
+
+.eat_jalebi_box{position:absolute; width:88vw; height:155vw; top:210vw; left:-96vw; background-color:white; border-radius:10vw; z-index:100;}
+.eat_jalebi_box_heading{position:absolute; font-size:10vw; font-family:steamy; left:23vw; top:2vw; color:black; opacity:0;} 
+.eat_jalebi_box_photo{position:absolute; height:40vw; width:70vw; top:25vw; left:9vw; background-image:url("jalebi_image.png"); border-radius:7vw; background-size:100% 100%; background-repeat:no-repeat; opacity:0;}
+.eat_jalebi_box_discription{position:absolute; font-size:6.5vw; font-family:font1; left:5vw; line-height:10vw; color:black; top:63vw; opacity:0;}
+.eat_jalebi_box_register{position:absolute; height:15vw; width:35vw; top:135vw; left:27vw; background-color:#5400bf; border-radius:25vw; opacity:0;}
+.eat_jalebi_box_register_p{position:absolute; font-size:8vw; font-family:font1; color:white; top:-5vw; left:5.2vw;}
+.eat_jalebi_box_close{position:absolute; height:15vw; width:15vw; top:134vw; left:67vw; background-color:red; border-radius:50%; opacity:0;}
+.eat_jalebi_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
+.eat_jalebi_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
+
 
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
 @keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
@@ -301,6 +377,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 @keyframes btn_anm{0%{letter-spacing:default;} 50%{letter-spacing:1.5vw; left:23vw;} 100%{letter-spacing:default; left:default;}}
 @keyframes btn_anm_specific_model_making{0%{letter-spacing:default;} 50%{letter-spacing:1.5vw; left:10vw;} 100%{letter-spacing:default; left:default;}}
 @keyframes btn_anm_specific_carbon{0%{letter-spacing:default;} 50%{letter-spacing:1.5vw; left:15vw;} 100%{letter-spacing:default; left:default;}}
+@keyframes reveal_aman{from{left:-96vw;} to{left:0vw;}}
+@keyframes rotate_aman{from{opacity:0;} to{opacity:1;}}
 
 }
 
@@ -310,9 +388,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <body style="overflow: scroll;">
 
 <div class="options" id="options" style="height:0vw;">
-	<a href="test_fest.html" class="options_events" id="events">Home</a>
-	<a href="test_fest.html#main_content_2_about" class="options_abt" id="about">About</a>
-	<a href="#" class="options_gall" id="gallery">Gallery</a>
+	<a href="index.html" class="options_events" id="events">Home</a>
+	<a href="index.html#main_content_2_about" class="options_abt" id="about">About</a>
+	<a href="test_fest_gallery.html" class="options_gall" id="gallery">Gallery</a>
 	<a href="#" class="options_team" id="team">Team</a>
 	<a href="#" class="options_reg" id="register">Register</a>
 </div>
@@ -321,7 +399,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div class="top_div_horizontal_line"></div>
 <div class="top_div">
 	<div class="top_div_animation"></div>
-<a href="test_fest.html"><div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div></a>
+<a href="index.html"><div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div></a>
 <div class="top_div_vertical_line"></div>
 
 <div class="top_div_menu" id="top_div_menu" it="top">
@@ -382,36 +460,42 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	<div class="main_2_fun_event_2_photo_1"></div>
 	<div class="main_2_fun_event_2_photo_1_inside"></div>
 		<div class="main_2_fun_event_2_name_div">
-			<p class="main_2_event_2_fun_name_div_p" i="main_2_event_2_fun_name_div_p">Bricks Walk</p>
+			<button class="main_2_tech_event_2_name_div_button" onclick="brick()"></button>
+			<p class="main_2_event_2_fun_name_div_p" id="main_2_event_2_fun_name_div_p">Bricks Walk</p>
 		</div>
 	
 	<div class="main_2_fun_event_3_photo_1"></div>
 	<div class="main_2_fun_event_3_photo_1_inside"></div>
 		<div class="main_2_fun_event_3_name_div">
+			<button class="main_2_tech_event_3_name_div_button" onclick="reach_target()"></button>
 			<p class="main_2_event_3_fun_name_div_p" id="main_2_event_3_fun_name_div_p">Reach Target</p>
 		</div>
 		
 	<div class="main_2_fun_event_4_photo_1"></div>
 	<div class="main_2_fun_event_4_photo_1_inside"></div>
 		<div class="main_2_fun_event_4_name_div">
+			<button class="main_2_tech_event_4_name_div_button" onclick="ball_in_bucket()"></button>
 			<p class="main_2_event_4_fun_name_div_p" id="main_2_event_4_fun_name_div_p">Ball in the bucket</p>
 		</div>
 		
 	<div class="main_2_fun_event_5_photo_1"></div>
 	<div class="main_2_fun_event_5_photo_1_inside"></div>
 		<div class="main_2_fun_event_5_name_div">
+			<button class="main_2_tech_event_5_name_div_button" onclick="kite()"></button>
 			<p class="main_2_event_5_fun_name_div_p" id="main_2_event_5_fun_name_div_p">Kite competition</p>
 		</div>
 	
 	<div class="main_2_fun_event_6_photo_1"></div>
 	<div class="main_2_fun_event_6_photo_1_inside"></div>
 		<div class="main_2_fun_event_6_name_div">
+			<button class="main_2_tech_event_6_name_div_button" onclick="coin()"></button>
 			<p class="main_2_event_6_fun_name_div_p" id="main_2_event_6_fun_name_div_p">Coin Minting</p>
 		</div>
 	
 	<div class="main_2_fun_event_7_photo_1"></div>
 	<div class="main_2_fun_event_7_photo_1_inside"></div>
 		<div class="main_2_fun_event_7_name_div">
+			<button class="main_2_tech_event_7_name_div_button" onclick="eat_jalebi()"></button>
 			<p class="main_2_event_7_fun_name_div_p" id="main_2_event_7_fun_name_div_p">Eat Jillebi</p>
 		</div>
 	
@@ -463,6 +547,60 @@ The one who scores the maximum points wins the game.</p>
 	<div class="carbon_box_register" id="carbon_box_register"><p class="carbon_box_register_p">Register</p></div>
 	<div class="carbon_box_close" id="carbon_box_close"><button class="carbon_box_close_button" onclick="carbon_close()"></button>
 	<p class="carbon_box_close_p">Close</p></div>
+</div>
+
+<div class="brick_box" id="brick_box" style="left:-96vw;">
+	<p class="brick_box_heading" id="brick_box_heading">Brick Walk</p>
+	<div class="brick_box_photo" id="brick_box_photo"></div>
+	<p class="brick_box_discription" id="brick_box_discription">Stepping into the heart of Brick Walk, the community converges on a path of camaraderie, where each brick tells a story of connection and shared history.</p>
+	<div class="brick_box_register" id="brick_box_register"><p class="brick_box_register_p">Register</p></div>
+	<div class="brick_box_close" id="brick_box_close"><button class="brick_box_close_button" onclick="brick_close()"></button>
+	<p class="brick_box_close_p">Close</p></div>
+</div>
+
+<div class="reach_target_box" id="reach_target_box" style="left:-96vw;">
+	<p class="reach_target_box_heading" id="reach_target_box_heading">Reach Target</p>
+	<div class="reach_target_box_photo" id="reach_target_box_photo"></div>
+	<p class="reach_target_box_discription" id="reach_target_box_discription">At the 'Reach Target' event in our college fest, students aim high and hit the bullseye of skill and camaraderie, turning aspirations into victorious moments that resonate throughout campus.</p>
+	<div class="reach_target_box_register" id="reach_target_box_register"><p class="reach_target_box_register_p">Register</p></div>
+	<div class="reach_target_box_close" id="reach_target_box_close"><button class="reach_target_box_close_button" onclick="reach_target_close()"></button>
+	<p class="reach_target_box_close_p">Close</p></div>
+</div>
+
+<div class="ball_in_bucket_box" id="ball_in_bucket_box" style="left:-96vw;">
+	<p class="ball_in_bucket_box_heading" id="ball_in_bucket_box_heading">Ball In Bucket</p>
+	<div class="ball_in_bucket_box_photo" id="ball_in_bucket_box_photo"></div>
+	<p class="ball_in_bucket_box_discription" id="ball_in_bucket_box_discription">At the 'Reach Target' event in our college fest, students aim high and hit the bullseye of skill and camaraderie, turning aspirations into victorious moments that resonate throughout campus.</p>
+	<div class="ball_in_bucket_box_register" id="ball_in_bucket_box_register"><p class="ball_in_bucket_box_register_p">Register</p></div>
+	<div class="ball_in_bucket_box_close" id="ball_in_bucket_box_close"><button class="ball_in_bucket_box_close_button" onclick="ball_in_bucket_close()"></button>
+	<p class="ball_in_bucket_box_close_p">Close</p></div>
+</div>
+
+<div class="kite_box" id="kite_box" style="left:-96vw;">
+	<p class="kite_box_heading" id="kite_box_heading">Kite Competetion</p>
+	<div class="kite_box_photo" id="kite_box_photo"></div>
+	<p class="kite_box_discription" id="kite_box_discription">In the annual kite competition, contestants claim victory by flying visible kites, showcasing their mastery of the unseen aerial artistry.</p>
+	<div class="kite_box_register" id="kite_box_register"><p class="kite_box_register_p">Register</p></div>
+	<div class="kite_box_close" id="kite_box_close"><button class="kite_box_close_button" onclick="kite_close()"></button>
+	<p class="kite_box_close_p">Close</p></div>
+</div>
+
+<div class="coin_box" id="coin_box" style="left:-96vw;">
+	<p class="coin_box_heading" id="coin_box_heading">Coin Minting</p>
+	<div class="coin_box_photo" id="coin_box_photo"></div>
+	<p class="coin_box_discription" id="coin_box_discription">At the coin minting event in our college fest, students turn creativity into currency, forging unique tokens of memories that symbolize the wealth of shared experiences on campus.</p>
+	<div class="coin_box_register" id="coin_box_register"><p class="coin_box_register_p">Register</p></div>
+	<div class="coin_box_close" id="coin_box_close"><button class="coin_box_close_button" onclick="coin_close()"></button>
+	<p class="coin_box_close_p">Close</p></div>
+</div>
+
+<div class="eat_jalebi_box" id="eat_jalebi_box" style="left:-96vw;">
+	<p class="eat_jalebi_box_heading" id="eat_jalebi_box_heading">Eat Jalebi</p>
+	<div class="eat_jalebi_box_photo" id="eat_jalebi_box_photo"></div>
+	<p class="eat_jalebi_box_discription" id="eat_jalebi_box_discription">At the 'Eat Jalebi' event in our college fest, taste buds embark on a sweet journey as students savor the spirals of joy, turning a simple treat into a symphony of delightful moments.</p>
+	<div class="eat_jalebi_box_register" id="eat_jalebi_box_register"><p class="eat_jalebi_box_register_p">Register</p></div>
+	<div class="eat_jalebi_box_close" id="eat_jalebi_box_close"><button class="eat_jalebi_box_close_button" onclick="eat_jalebi_close()"></button>
+	<p class="eat_jalebi_box_close_p">Close</p></div>
 </div>
 
 <div class="main_content_3_footer">
@@ -799,6 +937,308 @@ if(carbon_box.style.left==="6vw"){
 		carbon_box_close.style.animation="1s fade_out forwards";
 		carbon_p.style.animation="none";
 		carbon_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+function brick(){
+var brick_box=document.getElementById("brick_box");
+var brick_box_heading=document.getElementById("brick_box_heading");
+var brick_box_photo=document.getElementById("brick_box_photo");
+var brick_box_discription=document.getElementById("brick_box_discription");
+var brick_box_register=document.getElementById("brick_box_register");
+var brick_box_close=document.getElementById("brick_box_close");
+var brick_p=document.getElementById("main_2_event_2_fun_name_div_p");
+console.log("poster");
+if(brick_box.style.left==="-96vw"){
+		brick_box.style.animation="1s box_reveal forwards";
+		brick_box_heading.style.animation="0.5s reveal forwards";brick_box_heading.style.animationDelay="0.8s";
+		brick_box_photo.style.animation="0.5s reveal forwards";brick_box_photo.style.animationDelay="1s";
+		brick_box_discription.style.animation="0.5s reveal forwards";brick_box_discription.style.animationDelay="1.2s";
+		brick_box_register.style.animation="0.5s reveal_scale forwards";brick_box_register.style.animationDelay="1.2s";
+		brick_box_close.style.animation="0.5s reveal_scale forwards";brick_box_close.style.animationDelay="1.4s";
+		brick_p.style.animation="1s btn_anm_specific_carbon";
+		brick_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function brick_close(){
+var brick_box=document.getElementById("brick_box");
+var brick_box_heading=document.getElementById("brick_box_heading");
+var brick_box_photo=document.getElementById("brick_box_photo");
+var brick_box_discription=document.getElementById("brick_box_discription");
+var brick_box_register=document.getElementById("brick_box_register");
+var brick_box_close=document.getElementById("brick_box_close");
+var brick_p=document.getElementById("main_2_event_2_fun_name_div_p");
+
+if(brick_box.style.left==="6vw"){
+		brick_box.style.animation="1s fade_out_box forwards";
+		brick_box_heading.style.animation="1s fade_out forwards";
+		brick_box_photo.style.animation="1s fade_out forwards";
+		brick_box_discription.style.animation="1s fade_out forwards";
+		brick_box_register.style.animation="1s fade_out forwards";
+		brick_box_close.style.animation="1s fade_out forwards";
+		brick_p.style.animation="none";
+		brick_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+
+function reach_target(){
+var reach_target_box=document.getElementById("reach_target_box");
+var reach_target_box_heading=document.getElementById("reach_target_box_heading");
+var reach_target_box_photo=document.getElementById("reach_target_box_photo");
+var reach_target_box_discription=document.getElementById("reach_target_box_discription");
+var reach_target_box_register=document.getElementById("reach_target_box_register");
+var reach_target_box_close=document.getElementById("reach_target_box_close");
+var reach_target_p=document.getElementById("main_2_event_3_fun_name_div_p");
+console.log("poster");
+if(reach_target_box.style.left==="-96vw"){
+		reach_target_box.style.animation="1s box_reveal forwards";
+		reach_target_box_heading.style.animation="0.5s reveal forwards";reach_target_box_heading.style.animationDelay="0.8s";
+		reach_target_box_photo.style.animation="0.5s reveal forwards";reach_target_box_photo.style.animationDelay="1s";
+		reach_target_box_discription.style.animation="0.5s reveal forwards";reach_target_box_discription.style.animationDelay="1.2s";
+		reach_target_box_register.style.animation="0.5s reveal_scale forwards";reach_target_box_register.style.animationDelay="1.2s";
+		reach_target_box_close.style.animation="0.5s reveal_scale forwards";reach_target_box_close.style.animationDelay="1.4s";
+		reach_target_p.style.animation="1s btn_anm_specific_carbon";
+		reach_target_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function reach_target_close(){
+var reach_target_box=document.getElementById("reach_target_box");
+var reach_target_box_heading=document.getElementById("reach_target_box_heading");
+var reach_target_box_photo=document.getElementById("reach_target_box_photo");
+var reach_target_box_discription=document.getElementById("reach_target_box_discription");
+var reach_target_box_register=document.getElementById("reach_target_box_register");
+var reach_target_box_close=document.getElementById("reach_target_box_close");
+var reach_target_p=document.getElementById("main_2_event_3_fun_name_div_p");
+
+if(reach_target_box.style.left==="6vw"){
+		reach_target_box.style.animation="1s fade_out_box forwards";
+		reach_target_box_heading.style.animation="1s fade_out forwards";
+		reach_target_box_photo.style.animation="1s fade_out forwards";
+		reach_target_box_discription.style.animation="1s fade_out forwards";
+		reach_target_box_register.style.animation="1s fade_out forwards";
+		reach_target_box_close.style.animation="1s fade_out forwards";
+		reach_target_p.style.animation="none";
+		reach_target_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+function ball_in_bucket(){
+var ball_in_bucket_box=document.getElementById("ball_in_bucket_box");
+var ball_in_bucket_box_heading=document.getElementById("ball_in_bucket_box_heading");
+var ball_in_bucket_box_photo=document.getElementById("ball_in_bucket_box_photo");
+var ball_in_bucket_box_discription=document.getElementById("ball_in_bucket_box_discription");
+var ball_in_bucket_box_register=document.getElementById("ball_in_bucket_box_register");
+var ball_in_bucket_box_close=document.getElementById("ball_in_bucket_box_close");
+var ball_in_bucket_p=document.getElementById("main_2_event_4_fun_name_div_p");
+console.log("poster");
+if(ball_in_bucket_box.style.left==="-96vw"){
+		ball_in_bucket_box.style.animation="1s box_reveal forwards";
+		ball_in_bucket_box_heading.style.animation="0.5s reveal forwards";ball_in_bucket_box_heading.style.animationDelay="0.8s";
+		ball_in_bucket_box_photo.style.animation="0.5s reveal forwards";ball_in_bucket_box_photo.style.animationDelay="1s";
+		ball_in_bucket_box_discription.style.animation="0.5s reveal forwards";ball_in_bucket_box_discription.style.animationDelay="1.2s";
+		ball_in_bucket_box_register.style.animation="0.5s reveal_scale forwards";ball_in_bucket_box_register.style.animationDelay="1.2s";
+		ball_in_bucket_box_close.style.animation="0.5s reveal_scale forwards";ball_in_bucket_box_close.style.animationDelay="1.4s";
+		ball_in_bucket_p.style.animation="1s btn_anm_specific_carbon";
+		ball_in_bucket_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function ball_in_bucket_close(){
+var ball_in_bucket_box=document.getElementById("ball_in_bucket_box");
+var ball_in_bucket_box_heading=document.getElementById("ball_in_bucket_box_heading");
+var ball_in_bucket_box_photo=document.getElementById("ball_in_bucket_box_photo");
+var ball_in_bucket_box_discription=document.getElementById("ball_in_bucket_box_discription");
+var ball_in_bucket_box_register=document.getElementById("ball_in_bucket_box_register");
+var ball_in_bucket_box_close=document.getElementById("ball_in_bucket_box_close");
+var ball_in_bucket_p=document.getElementById("main_2_event_4_fun_name_div_p");
+
+if(ball_in_bucket_box.style.left==="6vw"){
+		ball_in_bucket_box.style.animation="1s fade_out_box forwards";
+		ball_in_bucket_box_heading.style.animation="1s fade_out forwards";
+		ball_in_bucket_box_photo.style.animation="1s fade_out forwards";
+		ball_in_bucket_box_discription.style.animation="1s fade_out forwards";
+		ball_in_bucket_box_register.style.animation="1s fade_out forwards";
+		ball_in_bucket_box_close.style.animation="1s fade_out forwards";
+		ball_in_bucket_p.style.animation="none";
+		ball_in_bucket_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+
+function kite(){
+var kite_box=document.getElementById("kite_box");
+var kite_box_heading=document.getElementById("kite_box_heading");
+var kite_box_photo=document.getElementById("kite_box_photo");
+var kite_box_discription=document.getElementById("kite_box_discription");
+var kite_box_register=document.getElementById("kite_box_register");
+var kite_box_close=document.getElementById("kite_box_close");
+var kite_p=document.getElementById("main_2_event_5_fun_name_div_p");
+console.log("poster");
+if(kite_box.style.left==="-96vw"){
+		kite_box.style.animation="1s box_reveal forwards";
+		kite_box_heading.style.animation="0.5s reveal forwards";kite_box_heading.style.animationDelay="0.8s";
+		kite_box_photo.style.animation="0.5s reveal forwards";kite_box_photo.style.animationDelay="1s";
+		kite_box_discription.style.animation="0.5s reveal forwards";kite_box_discription.style.animationDelay="1.2s";
+		kite_box_register.style.animation="0.5s reveal_scale forwards";kite_box_register.style.animationDelay="1.2s";
+		kite_box_close.style.animation="0.5s reveal_scale forwards";kite_box_close.style.animationDelay="1.4s";
+		kite_p.style.animation="1s btn_anm_specific_carbon";
+		kite_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function kite_close(){
+var kite_box=document.getElementById("kite_box");
+var kite_box_heading=document.getElementById("kite_box_heading");
+var kite_box_photo=document.getElementById("kite_box_photo");
+var kite_box_discription=document.getElementById("kite_box_discription");
+var kite_box_register=document.getElementById("kite_box_register");
+var kite_box_close=document.getElementById("kite_box_close");
+var kite_p=document.getElementById("main_2_event_5_fun_name_div_p");
+
+if(kite_box.style.left==="6vw"){
+		kite_box.style.animation="1s fade_out_box forwards";
+		kite_box_heading.style.animation="1s fade_out forwards";
+		kite_box_photo.style.animation="1s fade_out forwards";
+		kite_box_discription.style.animation="1s fade_out forwards";
+		kite_box_register.style.animation="1s fade_out forwards";
+		kite_box_close.style.animation="1s fade_out forwards";
+		kite_p.style.animation="none";
+		kite_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+function coin(){
+var coin_box=document.getElementById("coin_box");
+var coin_box_heading=document.getElementById("coin_box_heading");
+var coin_box_photo=document.getElementById("coin_box_photo");
+var coin_box_discription=document.getElementById("coin_box_discription");
+var coin_box_register=document.getElementById("coin_box_register");
+var coin_box_close=document.getElementById("coin_box_close");
+var coin_p=document.getElementById("main_2_event_6_fun_name_div_p");
+console.log("poster");
+if(coin_box.style.left==="-96vw"){
+		coin_box.style.animation="1s box_reveal forwards";
+		coin_box_heading.style.animation="0.5s reveal forwards";coin_box_heading.style.animationDelay="0.8s";
+		coin_box_photo.style.animation="0.5s reveal forwards";coin_box_photo.style.animationDelay="1s";
+		coin_box_discription.style.animation="0.5s reveal forwards";coin_box_discription.style.animationDelay="1.2s";
+		coin_box_register.style.animation="0.5s reveal_scale forwards";coin_box_register.style.animationDelay="1.2s";
+		coin_box_close.style.animation="0.5s reveal_scale forwards";coin_box_close.style.animationDelay="1.4s";
+		coin_p.style.animation="1s btn_anm_specific_carbon";
+		coin_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function coin_close(){
+var coin_box=document.getElementById("coin_box");
+var coin_box_heading=document.getElementById("coin_box_heading");
+var coin_box_photo=document.getElementById("coin_box_photo");
+var coin_box_discription=document.getElementById("coin_box_discription");
+var coin_box_register=document.getElementById("coin_box_register");
+var coin_box_close=document.getElementById("coin_box_close");
+var coin_p=document.getElementById("main_2_event_6_fun_name_div_p");
+
+if(coin_box.style.left==="6vw"){
+		coin_box.style.animation="1s fade_out_box forwards";
+		coin_box_heading.style.animation="1s fade_out forwards";
+		coin_box_photo.style.animation="1s fade_out forwards";
+		coin_box_discription.style.animation="1s fade_out forwards";
+		coin_box_register.style.animation="1s fade_out forwards";
+		coin_box_close.style.animation="1s fade_out forwards";
+		coin_p.style.animation="none";
+		coin_box.style.left="-96vw";
+		document.body.style.overflow="scroll";
+		
+	}
+
+}
+
+function eat_jalebi(){
+var eat_jalebi_box=document.getElementById("eat_jalebi_box");
+var eat_jalebi_box_heading=document.getElementById("eat_jalebi_box_heading");
+var eat_jalebi_box_photo=document.getElementById("eat_jalebi_box_photo");
+var eat_jalebi_box_discription=document.getElementById("eat_jalebi_box_discription");
+var eat_jalebi_box_register=document.getElementById("eat_jalebi_box_register");
+var eat_jalebi_box_close=document.getElementById("eat_jalebi_box_close");
+var eat_jalebi_p=document.getElementById("main_2_event_7_fun_name_div_p");
+console.log("poster");
+if(eat_jalebi_box.style.left==="-96vw"){
+		eat_jalebi_box.style.animation="1s box_reveal forwards";
+		eat_jalebi_box_heading.style.animation="0.5s reveal forwards";eat_jalebi_box_heading.style.animationDelay="0.8s";
+		eat_jalebi_box_photo.style.animation="0.5s reveal forwards";eat_jalebi_box_photo.style.animationDelay="1s";
+		eat_jalebi_box_discription.style.animation="0.5s reveal forwards";eat_jalebi_box_discription.style.animationDelay="1.2s";
+		eat_jalebi_box_register.style.animation="0.5s reveal_scale forwards";eat_jalebi_box_register.style.animationDelay="1.2s";
+		eat_jalebi_box_close.style.animation="0.5s reveal_scale forwards";eat_jalebi_box_close.style.animationDelay="1.4s";
+		eat_jalebi_p.style.animation="1s btn_anm_specific_carbon";
+		eat_jalebi_box.style.left="6vw";
+		window.scrollTo({top:658,behavior:"smooth"});
+		console.log(window.scrollY);
+		setTimeout(function(){if(window.scrollY>500){document.body.style.overflow="hidden"; console.log("reached settimeout");}},700);
+
+	}
+}
+
+
+function eat_jalebi_close(){
+var eat_jalebi_box=document.getElementById("eat_jalebi_box");
+var eat_jalebi_box_heading=document.getElementById("eat_jalebi_box_heading");
+var eat_jalebi_box_photo=document.getElementById("eat_jalebi_box_photo");
+var eat_jalebi_box_discription=document.getElementById("eat_jalebi_box_discription");
+var eat_jalebi_box_register=document.getElementById("eat_jalebi_box_register");
+var eat_jalebi_box_close=document.getElementById("eat_jalebi_box_close");
+var eat_jalebi_p=document.getElementById("main_2_event_7_fun_name_div_p");
+
+if(eat_jalebi_box.style.left==="6vw"){
+		eat_jalebi_box.style.animation="1s fade_out_box forwards";
+		eat_jalebi_box_heading.style.animation="1s fade_out forwards";
+		eat_jalebi_box_photo.style.animation="1s fade_out forwards";
+		eat_jalebi_box_discription.style.animation="1s fade_out forwards";
+		eat_jalebi_box_register.style.animation="1s fade_out forwards";
+		eat_jalebi_box_close.style.animation="1s fade_out forwards";
+		eat_jalebi_p.style.animation="none";
+		eat_jalebi_box.style.left="-96vw";
 		document.body.style.overflow="scroll";
 		
 	}
