@@ -1,0 +1,254 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+html{scroll-behavior:smooth;}
+@font-face{
+font-family:vampire;
+src:url("Vampire Wars Italic.ttf");
+}
+
+a{text-decoration:none; color:white; font-family:JetBrains Mono,monospace;}
+
+@font-face{
+font-family:steamy;
+src:url("Steamy.otf");
+}
+
+@font-face{
+font-family:rc;
+src:url("R&C-Demo.otf");
+}
+
+@font-face{
+font-family:charge;
+src:url("6809 Chargen.otf");
+}
+
+@font-face{
+font-family:font1;
+src:url("Cyrulik-SharpBold.ttf");
+}
+
+@font-face{
+font-family:font2;
+src:url("Aguante.otf");
+}
+
+@font-face{
+font-family:kannada;
+src:url("Nudi 17 e Regular.ttf");
+}
+
+@font-face{
+font-family:glitch;
+src:url("Demosdcyberglitch-yw6GM.ttf");
+}
+
+@font-face{
+font-family: font_no;
+src: url("WolfalconRegular-RpjW3.ttf");
+}
+
+body{background:black;}
+
+@media (max-width:480px){
+
+.options{position:absolute; display:; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000; overflow:hidden;}
+.options_events{position:absolute; font-size:10vw; font-family:font1; left:35vw; top:10vw; letter-spacing:.5vw; opacity:0;}
+.options_abt{position:absolute; font-size:10vw; font-family:font1; left:35.8vw; top:23vw; letter-spacing:.5vw; opacity:0;}
+.options_gall{position:absolute; font-size:10vw; font-family:font1; left:34vw; top:36vw; letter-spacing:.5vw; opacity:0;}
+.options_team{position:absolute; font-size:10vw; font-family:font1; left:37.5vw; top:49vw; letter-spacing:.5vw; opacity:0;}
+.options_reg{position:absolute; font-size:10vw; font-family:font1; left:32.5vw; top:62vw; letter-spacing:.5vw; opacity:0;}
+
+.top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%; overflow:hidden;}
+.top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
+
+.top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
+.top_div_tittle_p{opacity:0; font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:2s opacity_tittle forwards; animation-delay:0.3s;}
+
+.top_div_vertical_line{position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
+
+.top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
+
+.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; z-index:10000;}
+.top_div_menu_button{position:absolute; height:100%; width:100%; background-color:transparent; border:none;}
+.top_div_menu:hover .options{display:block;}
+.menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.1s;}
+.menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.17s;}
+.menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.22s;}
+
+.main_team_div{position:absolute; height:200vw; width:100%; top:23vw; left:0vw; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden;}
+.main_team_div_top{position:absolute; height:10vw; width:100%; left:0vw; top:0vw; border-bottom:1vw solid white;}
+.main_team_div_top_p{position:absolute; font-size:9vw; font-family:font1; top:-9.5vw; color:white; left:0vw; animation:4s about_move_p_1 infinite forwards linear;}
+.main_team_div_anm{position:absolute; height:100%; width:100%; left:0vw; top:10.7vw; background-color:;#ed0062}
+
+.main_team_SR_div{position:absolute; height:180vw; width:100%; top:11vw; left:0vw; background-color:; z-index:-10;}
+.main_team_SR_div_goutham{position:absolute; height:50vw; width:50vw; left:24vw; top:10vw; border-radius:50%; background-image:url("goutham_image.jpeg"); background-repeat:no-repeat; background-size:cover; cursor:default;}
+.main_team_SR_div_goutham_cover{position:absolute; height:100%; width:100%; border-radius:50%; transition:1s ease;}
+.main_team_SR_div_goutham:hover .main_team_SR_div_goutham_cover{background-color:rgba(0,0,0,0.7); transition:1s ease;}
+.main_team_SR_div_goutham:hover .main_team_SR_div_goutham_desg{opacity:1; transition:1s ease;}
+.main_team_SR_div_goutham:hover #main_team_SR_div_goutham_linked_in{opacity:1; transition:1s ease;}
+.main_team_SR_div_goutham_desg{position:absolute; font-size:6vw; color:white; font-family:font1; left:10vw; top:30vw; opacity:0; transition:1s ease;}
+#main_team_SR_div_goutham_linked_in{position:absolute; font-size:7vw; color:white; background-color:#0a66c2; top:42vw; left:22vw; opacity:0; transition:1s ease;}
+
+.main_team_SR_div_bhargav{position:absolute; height:50vw; width:50vw; left:24vw; top:75vw; border-radius:50%; background-image:url("bhargav_image.jpeg"); background-repeat:no-repeat; background-size:cover; cursor:default;}
+.main_team_SR_div_bhargav_cover{position:absolute; height:100%; width:100%; border-radius:50%; transition:1s ease;}
+.main_team_SR_div_bhargav:hover .main_team_SR_div_bhargav_cover{background-color:rgba(0,0,0,0.7); transition:1s ease;}
+.main_team_SR_div_bhargav:hover .main_team_SR_div_bhargav_desg{opacity:1; transition:1s ease;}
+.main_team_SR_div_bhargav:hover #main_team_SR_div_bhargav_linked_in{opacity:1; transition:1s ease;}
+.main_team_SR_div_bhargav_desg{position:absolute; font-size:6vw; color:white; font-family:font1; left:9vw; top:30vw; opacity:0; transition:1s ease;}
+#main_team_SR_div_bhargav_linked_in{position:absolute; font-size:7vw; color:white; background-color:#0a66c2; top:42vw; left:22vw; opacity:0; transition:1s ease;}
+
+
+@keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
+@keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
+@keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
+@keyframes reveal_main_1_head {from{height:55vw;} to{height:0vw;}}
+@keyframes reveal_astronaut {from{height:100%;} to{height: 0vw;}}
+@keyframes scale_head_p{from{scale:5;} to{scale:1;}}
+@keyframes opacity_tittle{from{opacity:0; scale:0.8;} to{opacity: 1; scale: 1;}}
+@keyframes menu_line_reveal{from{left:1000vw;} to{left:1.5vw;}}
+@keyframes astronaut_float{from{top:24vw;} to{top:21vw;}}
+@keyframes planets_reveal{from{opacity:0;} to{opacity:1;}}
+@keyframes about_move_p_1{from{left:100vw;} to{left:-20vw;}}
+@keyframes about_move_p_2{from{left:100vw;} to{left:-20vw;}}
+@keyframes sponsors_move_p_1{from{left:100vw;} to{left:-40vw;}}
+@keyframes sponsors_move_p_2{from{left:100vw;} to{left:-40vw;}}
+@keyframes color_change{from{text-shadow:0vw 0vw 0vw white;} to{text-shadow:0vw 0vw 1vw white;}}
+@keyframes menu_box_reveal{from{height:0vw;} to{height:90vw;}}
+@keyframes menu_reveal_events{from{opacity:0; left:0vw;} to{opacity:1; left:35vw;}}
+@keyframes menu_reveal_abt{from{opacity:0; left:0vw;} to{opacity:1; left:35.8vw;}}
+@keyframes menu_reveal_gall{from{opacity:0; left:0vw;} to{opacity:1; left:34vw;}}
+@keyframes menu_reveal_team{from{opacity:0; left:0vw;} to{opacity:1; left:37.5vw;}}
+@keyframes menu_reveal_reg{from{opacity:0; left:0vw;} to{opacity:1; left:32.5vw;}}
+@keyframes menu_dereveal_events{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_abt{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_gall{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_team{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_dereveal_reg{from{opacity:1;} to{opacity:0;}}
+@keyframes menu_box_dereveal{from{height:90vw;} to{height:0vw;}}
+@keyframes menu_box_none{from{display:block;} to{display:none;}}
+@keyframes menu_line_1{from{width:5.5vw;} to{width:14vw;}}
+@keyframes menu_line_3{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_1_renew{from{width:14vw;} to{width:5.5vw;}}
+@keyframes menu_line_3_renew{from{width:5.5vw;} to{width:14vw;}}
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="options" id="options" style="height:0vw;">
+	<a href="test_fest_events.html" class="options_events" id="events">Events</a>
+	<a href="#main_content_2_about" class="options_abt" id="about" onclick="menu()">About</a>
+	<a href="test_fest_gallery.html" class="options_gall" id="gallery">Gallery</a>
+	<a href="#" class="options_team" id="team">Team</a>
+	<a href="#" class="options_reg" id="register">Register</a>
+</div>
+
+
+<div class="top_div_horizontal_line"></div>
+<div class="top_div">
+	<div class="top_div_animation"></div>
+<div class="top_div_tittle"  id="top"><p class="top_div_tittle_p">VYOMA</p></div>
+<div class="top_div_vertical_line"></div>
+
+<div class="top_div_menu" id="top_div_menu">
+		<button class="top_div_menu_button" onclick="menu()"></button>
+		<div class="menu_line_1" id="menu_line_1"></div>
+		<div class="menu_line_2"></div>
+		<div class="menu_line_3" id="menu_line_3"></div>
+	</div>
+</div>
+
+<div class="main_team_div">
+	<div class="main_team_div_top"><p class="main_team_div_top_p">Team</p></div>
+	<div class="main_team_div_anm" id="main_team_div_anm" style="background-color:;"></div>
+	<div class="main_team_SR_div" id="main_team_SR_div" style="z-index:-10;">
+			<div class="main_team_SR_div_goutham"><div class="main_team_SR_div_goutham_cover"></div><p class="main_team_SR_div_goutham_desg">Web Designer</p><a href="#" class="fa fa-linkedin" id="main_team_SR_div_goutham_linked_in"></a></div>
+			<div class="main_team_SR_div_tejas"></div>
+			<div class="main_team_SR_div_bhargav"><div class="main_team_SR_div_bhargav_cover"></div><p class="main_team_SR_div_bhargav_desg">Web Developer</p><a href="#" class="fa fa-linkedin" id="main_team_SR_div_bhargav_linked_in"></a></div></div>
+			<div class="main_team_SR_div_aditya"></div>
+		</div>
+</div>
+
+<script type="text/javascript">
+function menu(){
+console.log("called");
+var a=document.getElementById("options")
+var event_s=document.getElementById("events");
+var about=document.getElementById("about");
+var gall=document.getElementById("gallery");
+var team=document.getElementById("team");
+var reg=document.getElementById("register");
+var line1=document.getElementById("menu_line_1");
+var line3=document.getElementById("menu_line_3");
+var back_blur=document.getElementById("main_content_1_rotating_planets_with_astronaut");
+var back_blur_2=document.getElementById("flash_trial");
+
+if(a.style.height==="0vw"){
+a.style.animation="0.5s menu_box_reveal forwards";
+event_s.style.animation="1s menu_reveal_events forwards";
+about.style.animation="1s menu_reveal_abt forwards";
+about.style.animationDelay="0.2s";
+gall.style.animation="1s menu_reveal_gall forwards";
+gall.style.animationDelay="0.4s";
+team.style.animation="1s menu_reveal_team forwards";
+team.style.animationDelay="0.6s";
+reg.style.animation="1s menu_reveal_reg forwards";
+reg.style.animationDelay="0.8s";
+a.style.height="90vw";
+line1.style.animation="0.5s menu_line_1 forwards";
+line3.style.animation="0.5s menu_line_3 forwards";
+back_blur.style.filter="blur(5vw)";
+document.body.style.overflow="hidden";
+back_blur_2.style.filter="blur(5vw)";
+}
+else{
+event_s.style.animation=".2s menu_dereveal_events forwards";
+event_s.style.animationDelay="0s";
+about.style.animation="0.2s menu_dereveal_abt forwards";
+about.style.animationDelay="0s";
+gall.style.animation="0.2s menu_dereveal_gall forwards";
+gall.style.animationDelay="0s";
+team.style.animation="0.2s menu_dereveal_team forwards";
+team.style.animationDelay="0s";
+reg.style.animation="0.2s menu_dereveal_reg forwards";
+reg.style.animationDelay="0s";
+a.style.animation="2s menu_box_dereveal forwards";
+a.style.height="0vw";
+line1.style.animation="0.5s menu_line_1_renew forwards";
+line3.style.animation="0.5s menu_line_3_renew forwards";
+back_blur.style.filter="blur(0vw)";
+document.body.style.overflow="scroll";
+back_blur_2.style.filter="blur(0vw)";
+
+}
+}
+
+function change_color(){
+	const color=["#ed0062","#4300ed","#00d37b","#8400e2","#c5f700","#ff0000","#ff5a00","#0ad2ff","#2962ff","#9500ff","#ff0059","#ff8c00","#b4e600"];
+	var div_color=document.getElementById("main_team_div_anm");
+	var index=0;
+	var sr=document.getElementById("main_team_SR_div");
+	const one_anm=setInterval(function(){
+			div_color.style.backgroundColor=color[index];
+			index++;
+			console.log(index,color[index]);
+			if(index===color.length){index=0;}
+		},200);
+	
+	setTimeout(function(){sr.style.zIndex="10";div_color.style.display="none";div_color.style.backgroundColor="rgba(0,0,0,0)"; clearInterval(one_anm); div_color.style.backgroundImage="url('stars.png')"; div_color.style.BackgroundRepeat="no-repeat"; div_color.style.backgroundSize="100% 100%";},5000);
+	
+}
+change_color();
+
+</script>
+
+</body>
+</html>
