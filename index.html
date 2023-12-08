@@ -496,7 +496,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<div class="main_content_3_events_main_box_3_photo_1"></div>
 		<p class="main_content_3_events_main_box_3_p_1">See Events</p>
 		<div class="main_content_3_events_main_box_3_see_events_button" id="flash_mob_display">
-			<button class="flash_mob_button" onclick="flash_mob()" style="cursor:pointer; position:absolute; height:100%; width:100%; top:0vw; left:0vw; background:transparent; border:none; z-index:100;"></button>
+			<button class="flash_mob_button" onclick="flash_mob(); play_song()" style="cursor:pointer; position:absolute; height:100%; width:100%; top:0vw; left:0vw; background:transparent; border:none; z-index:100;"></button>
 			<div class="main_content_3_events_main_box_3_arrow"></div>
 		</div>
 	</div>
@@ -579,8 +579,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div class="flashmob_trial" id="flash_trial" style="display:none;">
 	<p class="flashmob_trial_photo">FLASHMOB</p>
 	<p class="flash_mob_date">15 December, 2023</p>
-	<button class="flashmob_close" onclick="flash_mob_close()"><p class="flashmob_close_p">Close</p></button>
+	<button class="flashmob_close" onclick="flash_mob_close(); stop_song()"><p class="flashmob_close_p">Close</p></button>
 </div>
+
+<audio id="song_play" src="house_memory.mp3"></audio>
 
 <script type="text/javascript">
 
@@ -834,6 +836,21 @@ document.getElementById("main_content_3_events_main_box_2_see_events_button").ad
   }, 3000);
 
 });
+
+function play_song(){
+	
+	var play_song=document.getElementById("song_play");
+	play_song.play();
+	
+}
+
+function stop_song(){
+	
+	var stop_song=document.getElementById("song_play");
+	stop_song.pause();
+	stop_song.currentTime=0;
+	
+}
 
 </script>
 
