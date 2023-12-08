@@ -321,6 +321,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .flashmob_close{position:absolute; color:red; width:35vw; height:12vw; background-color:#CA42A9; border:0.5vw solid black; border-radius:10vw; right:33vw; top:165vw; opacity:0.8;}
 .flashmob_close_p{position:absolute; top:-8vw; left:6.7vw; font-size:8vw; color:white;}
 
+
+.animation_change_page{display:none; position:fixed; height:100%; width:100%; top:0vw; left:0vw; background-color:; z-index:10000000;}
+.animation_change_page_inside_top{display:none; position:absolute; height:15vw; width:100%; top:0vw; left:0vw; background-color:black;}
+.animation_change_page_inside_bottom{display:none; position:absolute; height:15vw; width:100%; bottom:0vw; left:0vw; background-color:black;}
+.animation_change_page_inside_left{display:none; position:absolute; height:100%; width:15vw; top:0vw; left:0vw; background-color:black;}
+.animation_change_page_inside_right{display:none; position:absolute; height:100%; width:15vw; top:0vw; right:0vw; background-color:black;}
+
 @keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
 @keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
@@ -353,6 +360,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 @keyframes menu_line_3{from{width:14vw;} to{width:5.5vw;}}
 @keyframes menu_line_1_renew{from{width:14vw;} to{width:5.5vw;}}
 @keyframes menu_line_3_renew{from{width:5.5vw;} to{width:14vw;}}
+@keyframes page_anm_top{from{top:-15vw;} to{top:0vw;}}
+@keyframes page_anm_bottom{from{bottom:-15vw;} to{bottom:0vw;}}
+@keyframes page_anm_left{from{left:-15vw;} to{left:0vw;}}
+@keyframes page_anm_right{from{right:-15vw;} to{right:0vw;}}
+@keyframes page_anm_top_full{from{height:15vw;} to{height:100%;}}
 
 
 /*@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}*/
@@ -386,7 +398,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 </div>
 
 
-
+<div class="animation_change_page" id="animation_change_page" style="display:none;">
+	<div class="animation_change_page_inside_top" id="animation_change_page_inside_top" style="display:none;"></div>
+	<div class="animation_change_page_inside_bottom" id="animation_change_page_inside_bottom" style="display:none;"></div>
+	<div class="animation_change_page_inside_left" id="animation_change_page_inside_left" style="display:none;"></div>
+	<div class="animation_change_page_inside_right" id="animation_change_page_inside_right" style="display:none;"></div>
+</div>
 
 <div class="options" id="options" style="height:0vw;">
 	<a href="test_fest_events.html" class="options_events" id="events">Events</a>
@@ -460,7 +477,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<p class="main_content_3_events_main_box_1_heading">Technical Events</p>
 		<p class="main_content_3_events_main_box_1_p_1">See Events</p>
 		<div class="main_content_3_events_main_box_1_photo_1"></div>
-		<a href="test_fest_events.html"><div class="main_content_3_events_main_box_1_see_events_button">
+		<a href="test_fest_events.html" id="main_content_3_events_main_box_1_see_events_button"><div class="main_content_3_events_main_box_1_see_events_button">
 			<div class="main_content_3_events_main_box_1_arrow"></div>
 		</div></a>
 	</div>
@@ -469,7 +486,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<p class="main_content_3_events_main_box_2_heading">Fun Activities</p>
 		<p class="main_content_3_events_main_box_2_p_1">See Events</p>
 		<div class="main_content_3_events_main_box_2_photo_1"></div>
-		<a href="test_fest_events.html#main_2_fun_events"><div class="main_content_3_events_main_box_2_see_events_button">
+		<a href="test_fest_events.html#main_2_fun_events" id="main_content_3_events_main_box_2_see_events_button"><div class="main_content_3_events_main_box_2_see_events_button">
 			<div class="main_content_3_events_main_box_2_arrow"></div>
 		</div></a>
 	</div>
@@ -647,6 +664,177 @@ if(flash_mob_page.style.display==="block"){
 	back_blur_2.style.filter="blur(0vw)";
 }
 }
+
+function anm_page(){
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_block=document.getElementById("animation_change_page_inside_block");
+	animation_change_page.style.display="";
+	animation_change_page_inside_block.style.display="";
+	animation_change_page_inside_block.style.animation="2s page_anm_1";
+}
+
+document.getElementById("events").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("team").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("gallery").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("main_content_3_events_main_box_1_see_events_button").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("main_content_3_events_main_box_1_see_events_button").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("main_content_3_events_main_box_2_see_events_button").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top, page_anm_top_full";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
 </script>
 
 </body>
