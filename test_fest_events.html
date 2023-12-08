@@ -343,6 +343,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .eat_jalebi_box_close_p{position:absolute; font-size:6vw; font-family:font1; color:white; top:-1.7vw; left:1.9vw; z-index:0;}
 .eat_jalebi_box_close_button{position:absolute; height:100%; width:100%; top:0vw; z-index:100; left:0vw; border:none; border-radius:50%; background:transparent;}
 
+.animation_change_page{display:block; position:fixed; height:100%; width:100%; top:0vw; left:0vw; background-color:; z-index:10000000;}
+.animation_change_page_inside_top{display:block; position:absolute; height:100%; width:100%; top:0vw; left:0vw; background-color:black; animation-name:page_anm_top, page_anm_top_full; animation-duration:2s,1s; animation-delay:1s, 0s; animation-fill-mode:forwards, forwards;}
+.animation_change_page_inside_bottom{display:block; position:absolute; height:15vw; width:100%; bottom:0vw; left:0vw; background-color:black; animation:2s page_anm_bottom forwards; animation-delay:1s;}
+.animation_change_page_inside_left{display:block; position:absolute; height:100%; width:15vw; top:0vw; left:0vw; background-color:black; animation:2s page_anm_left forwards; animation-delay:1s;}
+.animation_change_page_inside_right{display:block; position:absolute; height:100%; width:15vw; top:0vw; right:0vw; background-color:black; animation:2s page_anm_right forwards; animation-delay:1s;}
+
 
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
 @keyframes reveal_top_menu{from{height:22vw;} to{height:0vw;}}
@@ -379,6 +385,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 @keyframes btn_anm_specific_carbon{0%{letter-spacing:default;} 50%{letter-spacing:1.5vw; left:15vw;} 100%{letter-spacing:default; left:default;}}
 @keyframes reveal_aman{from{left:-96vw;} to{left:0vw;}}
 @keyframes rotate_aman{from{opacity:0;} to{opacity:1;}}
+@keyframes page_anm_top{from{top:0vw;} to{top:-20vw;}}
+@keyframes page_anm_bottom{from{bottom:0vw;} to{bottom:-20vw;}}
+@keyframes page_anm_left{from{left:0vw;} to{left:-20vw;}}
+@keyframes page_anm_right{from{right:0vw;} to{right:-20vw;}}
+@keyframes page_anm_top_full{from{height:100%;} to{height:15vw;}}
+@keyframes page_anm_top_1{from{top:-15vw;} to{top:0vw;}}
+@keyframes page_anm_bottom_1{from{bottom:-15vw;} to{bottom:0vw;}}
+@keyframes page_anm_left_1{from{left:-15vw;} to{left:0vw;}}
+@keyframes page_anm_right_1{from{right:-15vw;} to{right:0vw;}}
+@keyframes page_anm_top_full_1{from{height:15vw;} to{height:100%;}}
+
 
 }
 
@@ -386,6 +403,15 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 </head>
 
 <body style="overflow: scroll;">
+
+
+<div class="animation_change_page" id="animation_change_page" style="display:;">
+	<div class="animation_change_page_inside_top" id="animation_change_page_inside_top" style="display:;"></div>
+	<div class="animation_change_page_inside_bottom" id="animation_change_page_inside_bottom" style="display:;"></div>
+	<div class="animation_change_page_inside_left" id="animation_change_page_inside_left" style="display:;"></div>
+	<div class="animation_change_page_inside_right" id="animation_change_page_inside_right" style="display:;"></div>
+</div>
+
 
 <div class="options" id="options" style="height:0vw;">
 	<a href="index.html" class="options_events" id="events">Home</a>
@@ -399,7 +425,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div class="top_div_horizontal_line"></div>
 <div class="top_div">
 	<div class="top_div_animation"></div>
-<a href="index.html"><div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div></a>
+<a href="index.html" id="top_div_tittle"><div class="top_div_tittle"><p class="top_div_tittle_p">VYOMA</p></div></a>
 <div class="top_div_vertical_line"></div>
 
 <div class="top_div_menu" id="top_div_menu" it="top">
@@ -1244,6 +1270,163 @@ if(eat_jalebi_box.style.left==="6vw"){
 	}
 
 }
+
+setTimeout(function(){
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="none";
+	animation_change_page_inside_top.style.display="none";
+	animation_change_page_inside_bottom.style.display="none";
+	animation_change_page_inside_left.style.display="none";
+	animation_change_page_inside_right.style.display="none";
+	animation_change_page_inside_top.style.top="-15vw";
+	animation_change_page_inside_top.style.height="15vw";
+	animation_change_page_inside_bottom.style.bottom="-15vw";
+	animation_change_page_inside_left.style.left="-15vw";
+	animation_change_page_inside_right.style.right="-15vw";
+},2000);
+
+document.getElementById("team").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+
+document.getElementById("gallery").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("about").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("events").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+document.getElementById("top_div_tittle").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+
+
 
 </script>
 </body>
