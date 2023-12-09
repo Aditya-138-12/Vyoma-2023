@@ -9,14 +9,61 @@
 
 .box_1{position:flex; width:48vw; height:37vw; background-color:rgba(255,255,255,0.5); margin-top:5%; margin-left:25%;}
 
-.top_photo{position:absolute; top:0vw; left:0vw; height:17vw; width:100%; background-color:rgba(0,0,0,0.85);}
-.top_photo p{position:absolute; top:-4vw; left:34vw; color:white; font-size:10vw; text-align:center; line-height:4.5vw; cursor:default; font-family:'Open Sans';}
-.email{position:absolute; top:0vw; left:0vw; width:44vw; height:7.7vw; border:1px solid black; border-radius:0.5vw;}
-.psswd{position:absolute; top:9vw; left:0vw; width:44vw; height:7.7vw; border:1px solid black; border-radius:0.5vw;}
-.login_btn{position:absolute; font-size:1vw; border-radius:0px; border:none; width:16vw; height:7vw; top:23vw; left:13vw;  transition:0.3s ease all;}
-.login_btn:hover{background-color:black; color:white; transition:0.3s ease all;}
+.top_photo{position:fixed; top:0vw; left:0vw; height:17vw; width:100%; background-color:rgba(0,0,0,0.85); z-index:1000;}
+.top_photo p{position:absolute; top:-4vw; left:8.5vw; color:white; font-size:10vw; text-align:center; line-height:4.5vw; cursor:default; font-family:'Open Sans';}
+.name{position:absolute; top:-25vw; left:-7vw; width:62vw; height:9.7vw; border:1px solid black; border-radius:0.5vw;}
+.clg_name{position:absolute; top:-11vw; left:-7vw; width:62vw; height:9.7vw; border:1px solid black; border-radius:0.5vw;}
+.USN{position:absolute; top:3vw; left:-7vw; width:62vw; height:9.7vw; border:1px solid black; border-radius:0.5vw;}
+.phone_number{position:absolute; top:17vw; left:-7vw; width:62vw; height:9.7vw; border:1px solid black; border-radius:0.5vw;}
+.dept_choice{position:absolute; top:31vw; left:-7vw; width:62vw; height:9.7vw;}
+
+.space_quiz{position:absolute; top:65vw; left:-10vw; height:6vw; width:6vw;}
+.space_quiz_label{position:absolute; top:65vw; left:0vw; font-size:5.5vw; color:white;}
+
+.poster_presentation{position:absolute; top:75vw; left:-10vw; height:6vw; width:6vw;}
+.poster_presentation_label{position:absolute; width:65vw; top:75.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.model_making{position:absolute; top:85vw; left:-10vw; height:6vw; width:6vw;}
+.model_making_label{position:absolute; width:65vw; top:85.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.aerogami{position:absolute; top:95vw; left:-10vw; height:6vw; width:6vw;}
+.aerogami_label{position:absolute; width:65vw; top:95.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Blind_balloon_blast{position:absolute; top:120vw; left:-10vw; height:6vw; width:6vw;}
+.Blind_balloon_blast_label{position:absolute; width:65vw; top:120.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Jilebi_Jump_Fest{position:absolute; top:130vw; left:-10vw; height:6vw; width:6vw;}
+.Jilebi_Jump_Fest_label{position:absolute; width:65vw; top:130.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Blow_balloon_target{position:absolute; top:140vw; left:-10vw; height:6vw; width:6vw;}
+.Blow_balloon_target_label{position:absolute; width:65vw; top:140.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Catch_the_ball{position:absolute; top:157vw; left:-10vw; height:6vw; width:6vw;}
+.Catch_the_ball_label{position:absolute; width:65vw; top:157.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Gully_cricket{position:absolute; top:167vw; left:-10vw; height:6vw; width:6vw;}
+.Gully_cricket_label{position:absolute; width:65vw; top:167.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Ball_in_basket{position:absolute; top:177vw; left:-10vw; height:6vw; width:6vw;}
+.Ball_in_basket_label{position:absolute; width:65vw; top:177.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Fun_Zone{position:absolute; top:187vw; left:-10vw; height:6vw; width:6vw;}
+.Fun_Zone_label{position:absolute; width:65vw; top:187.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Guess_the_Movie_Clip{position:absolute; top:197vw; left:-10vw; height:6vw; width:6vw;}
+.Guess_the_Movie_Clip_label{position:absolute; width:65vw; top:197.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+.Brick_Walk{position:absolute; top:207vw; left:-10vw; height:6vw; width:6vw;}
+.Brick_Walk_label{position:absolute; width:65vw; top:207.3vw; left:0vw; font-size:5.5vw; color:white;}
+
+
+.login_btn{position:absolute; background-color:black; border-radius:0px; border:none; width:35vw; height:12vw; top:225vw; left:8vw; border-radius:2vw; transition:0.3s ease all;}
+.login_btn:hover{background-color:white; color:black; transition:0.3s ease all;}
 .form_1{position:absolute; top:50vw; height:50vw; width:50vw;}
-.login_btn_p{font-size:5vw; margin-top:-0.5vw;}
+.login_btn_p{font-size:7vw; margin-top:-0.5vw; color:white; margin-top:1vw;}
+
+.techinical_events{position:absolute; top:100vw; left:7vw; height:170vw; width:85%;  background-color:rgba(0,0,0,0.8); z-index:-10; border:1vw solid black; border-radius:5vw;}
+
 }
 
 </style>
@@ -25,13 +72,69 @@
 
 	<div class="box_1">
 
-	<div class="top_photo"><p>Login</p></div>
+	<div class="top_photo"><p>Registration Form</p></div>
 	<form class="form_1" method="POST" action="http://192.168.67.139/valdi.php">
-		<input class="email" name="email" type="text" placeholder="Enter Email">
-		<input class="psswd" name="password" type="password" placeholder="Enter Password">
-		<button type="submit" class="login_btn"><center><p class="login_btn_p">Login</p><center></button>
-	</form>
+		<input class="name" name="name" type="text" placeholder="Enter Your Name" required>
+		<input class="clg_name" name="clg_name" type="text" placeholder="Enter College Name" required>
+		<input class="USN" name="usn" type="text" placeholder="Enter Your USN" required>
+		<input class="phone_number" name="phone_number" type="text" placeholder="Enter Your Mobile Number" required>
+		<select id="dept_choice" name="dept_choice" class="dept_choice"> 
+			<option value="CSE">CSE</option>
+			<option value="AI&ML">AI&MK</option>
+			<option value="AIDS">AIDS</option>
+			<option value="CSD">CSD</option>
+			<option value="IS">IS</option>
+			<option value="AE">AE</option>
+			<option value="AS">AS</option>
+			<option value="EC">EC</option>
+			<option value="CIVIL">CIVIL</option>
+			<option value="CIVIL_KANNADA">CIVIL(KANNADA)</option>
+			<option value="ME">ME</option>
+		</select>
+		
+		<label class="space_quiz_label">Space Quiz</label>
+			<input class="space_quiz" name="space_quiz" type="checkbox" value="Space Quiz">
+		
+		<label class="poster_presentation_label">Poster Presentation</label>
+			<input class="poster_presentation" name="poster_presentation" type="checkbox" value="Poster Presentation">
 
+		<label class="model_making_label">Model Making</label>
+			<input class="model_making" name="model_making" type="checkbox" value="Model Making">
+
+		<label class="aerogami_label">Aerogami</label>
+			<input class="aerogami" name="aerogami" type="checkbox" value="Aerogami">
+
+		<label class="Blind_balloon_blast_label">Blind Balloon Blast</label>
+			<input class="Blind_balloon_blast" name="Blind_balloon_blast" type="checkbox" value="Blind Balloon Blast">
+		
+		<label class="Jilebi_Jump_Fest_label">Jilebi Jump Fest</label>
+			<input class="Jilebi_Jump_Fest" name="Jilebi_Jump_Fest" type="checkbox" value="Jilebi Jump Fest">
+
+		<label class="Blow_balloon_target_label">Blow Balloon To Reach Target</label>
+			<input class="Blow_balloon_target" name="Blow_balloon_target" type="checkbox" value="Blow balloon target">
+			
+		<label class="Catch_the_ball_label">Catch The Ball</label>
+			<input class="Catch_the_ball" name="Catch_the_ball" type="checkbox" value="Catch The Ball">
+
+		<label class="Gully_cricket_label">Gully Cricket</label>
+			<input class="Gully_cricket" name="Gully_cricket" type="checkbox" value="Gully Cricket">
+
+		<label class="Ball_in_basket_label">Ball In Basket</label>
+			<input class="Ball_in_basket" name="Ball_in_basket" type="checkbox" value="Ball In Basket">
+
+		<label class="Fun_Zone_label">Fun Zone</label>
+			<input class="Fun_Zone" name="Fun_Zone" type="checkbox" value="Fun Zone">
+
+		<label class="Guess_the_Movie_Clip_label">Guess the Movie Clip</label>
+			<input class="Guess_the_Movie_Clip" name="Guess_the_Movie_Clip" type="checkbox" value="Guess the Movie Clip">
+
+		<label class="Brick_Walk_label">Brick Walk</label>
+			<input class="Brick_Walk" name="Brick_Walk" type="checkbox" value="Brick Walk">
+
+				
+		<button type="submit" class="login_btn"><center><p class="login_btn_p">Submit</p><center></button>
+	</form>
+	<center><div class="techinical_events"><p class="tech_events_heading" style="font-size:8vw; color:white; margin-top:2vw; font-weight:bold;">Technical Events</p><p class="non_tech_events_heading" style="position:absolute; font-size:7vw; color:white; font-weight:bold; top:50vw;">Non-Technical Events</p></div></center>
 	</div>
 
 </body>
