@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+
+@media (max-width:480px){
+	body{margin-top:0px; margin-left:0px; margin-right:0px; background-image:url("web_1.jpg"); }
+
+.box_1{position:flex; width:48vw; height:37vw; background-color:rgba(255,255,255,0.5); margin-top:5%; margin-left:25%;}
+
+.top_photo{position:absolute; top:0vw; left:0vw; height:17vw; width:100%; background-color:rgba(0,0,0,0.85);}
+.top_photo p{position:absolute; top:-4vw; left:34vw; color:white; font-size:10vw; text-align:center; line-height:4.5vw; cursor:default; font-family:'Open Sans';}
+.email{position:absolute; top:0vw; left:0vw; width:44vw; height:7.7vw; border:1px solid black; border-radius:0.5vw;}
+.psswd{position:absolute; top:9vw; left:0vw; width:44vw; height:7.7vw; border:1px solid black; border-radius:0.5vw;}
+.login_btn{position:absolute; font-size:1vw; border-radius:0px; border:none; width:16vw; height:7vw; top:23vw; left:13vw;  transition:0.3s ease all;}
+.login_btn:hover{background-color:black; color:white; transition:0.3s ease all;}
+.form_1{position:absolute; top:50vw; height:50vw; width:50vw;}
+.login_btn_p{font-size:5vw; margin-top:-0.5vw;}
+}
+
+</style>
+</head>
+<body>
+
+	<div class="box_1">
+
+	<div class="top_photo"><p>Login</p></div>
+	<form class="form_1" method="POST" action="http://192.168.67.139/valdi.php">
+		<input class="email" name="email" type="text" placeholder="Enter Email">
+		<input class="psswd" name="password" type="password" placeholder="Enter Password">
+		<button type="submit" class="login_btn"><center><p class="login_btn_p">Login</p><center></button>
+	</form>
+
+	</div>
+
+</body>
+</html>
