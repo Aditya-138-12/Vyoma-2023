@@ -5,7 +5,7 @@
 <style>
 
 @media (max-width:480px){
-	body{margin-top:0px; margin-left:0px; margin-right:0px; background-image:url("web_1.jpg"); }
+body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background-image:url("web_1.jpg"); }
 
 .box_1{position:flex; width:48vw; height:37vw; background-color:rgba(255,255,255,0.5); margin-top:5%; margin-left:25%;}
 
@@ -59,10 +59,13 @@
 
 .login_btn{position:absolute; background-color:black; border-radius:0px; border:none; width:35vw; height:12vw; top:225vw; left:8vw; border-radius:2vw; transition:0.3s ease all;}
 .login_btn:hover{background-color:white; color:black; transition:0.3s ease all;}
-.form_1{position:absolute; top:50vw; height:50vw; width:50vw;}
+.form_1{position:absolute; top:50vw; height:222vw; width:50vw;}
 .login_btn_p{font-size:7vw; margin-top:-0.5vw; color:white; margin-top:1vw;}
 
 .techinical_events{position:absolute; top:100vw; left:7vw; height:170vw; width:85%;  background-color:rgba(0,0,0,0.8); z-index:-10; border:1vw solid black; border-radius:5vw;}
+
+.go_back{position:absolute; height:15vw; width:15vw; top:273vw; right:10vw; background-color:black; border-radius:50%;}
+.go_back_p{position:absolute; font-size:6vw; color:white; top:-2vw; left:1.2vw;} 
 
 }
 
@@ -133,8 +136,11 @@
 
 				
 		<button type="submit" class="login_btn"><center><p class="login_btn_p">Submit</p><center></button>
+		
 	</form>
+	<a href="index.html"><div class="go_back"><p class="go_back_p">Back</p></div></a>
 	<center><div class="techinical_events"><p class="tech_events_heading" style="font-size:8vw; color:white; margin-top:2vw; font-weight:bold;">Technical Events</p><p class="non_tech_events_heading" style="position:absolute; font-size:7vw; color:white; font-weight:bold; top:50vw;">Non-Technical Events</p></div></center>
+
 	</div>
 
 </body>
