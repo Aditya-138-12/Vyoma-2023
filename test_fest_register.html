@@ -2,8 +2,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
 <style>
 
 @media (max-width:480px){
@@ -104,37 +102,37 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 			<input id="poster_presentation" class="poster_presentation" name="poster_presentation" type="checkbox" value="Poster Presentation">
 
 		<label class="model_making_label">Model Making</label>
-			<input class="model_making" name="model_making" type="checkbox" value="Model Making">
+			<input id="model_making" class="model_making" name="model_making" type="checkbox" value="Model Making">
 
 		<label class="aerogami_label">Aerogami</label>
-			<input class="aerogami" name="aerogami" type="checkbox" value="Aerogami">
+			<input class="aerogami" id="aerogami" name="aerogami" type="checkbox" value="Aerogami">
 
 		<label class="Blind_balloon_blast_label">Blind Balloon Blast</label>
-			<input class="Blind_balloon_blast" name="Blind_balloon_blast" type="checkbox" value="Blind Balloon Blast">
+			<input class="Blind_balloon_blast" id="Blind_balloon_blast" name="Blind_balloon_blast" type="checkbox" value="Blind Balloon Blast">
 		
 		<label class="Jilebi_Jump_Fest_label">Jilebi Jump Fest</label>
-			<input class="Jilebi_Jump_Fest" name="Jilebi_Jump_Fest" type="checkbox" value="Jilebi Jump Fest">
+			<input class="Jilebi_Jump_Fest" id="Jilebi_Jump_Fest" name="Jilebi_Jump_Fest" type="checkbox" value="Jilebi Jump Fest">
 
 		<label class="Blow_balloon_target_label">Blow Balloon To Reach Target</label>
-			<input class="Blow_balloon_target" name="Blow_balloon_target" type="checkbox" value="Blow balloon target">
+			<input class="Blow_balloon_target" id="Blow_balloon_target" name="Blow_balloon_target" type="checkbox" value="Blow balloon target">
 			
 		<label class="Catch_the_ball_label">Catch The Ball</label>
-			<input class="Catch_the_ball" name="Catch_the_ball" type="checkbox" value="Catch The Ball">
+			<input class="Catch_the_ball" id="Catch_the_ball" name="Catch_the_ball" type="checkbox" value="Catch The Ball">
 
 		<label class="Gully_cricket_label">Gully Cricket</label>
-			<input class="Gully_cricket" name="Gully_cricket" type="checkbox" value="Gully Cricket">
+			<input class="Gully_cricket" id="Gully_cricket" name="Gully_cricket" type="checkbox" value="Gully Cricket">
 
 		<label class="Ball_in_basket_label">Ball In Basket</label>
-			<input class="Ball_in_basket" name="Ball_in_basket" type="checkbox" value="Ball In Basket">
+			<input class="Ball_in_basket" id="Ball_in_basket" name="Ball_in_basket" type="checkbox" value="Ball In Basket">
 
 		<label class="Fun_Zone_label">Fun Zone</label>
-			<input class="Fun_Zone" name="Fun_Zone" type="checkbox" value="Fun Zone">
+			<input class="Fun_Zone" id="Fun_Zone" name="Fun_Zone" type="checkbox" value="Fun Zone">
 
 		<label class="Guess_the_Movie_Clip_label">Guess the Movie Clip</label>
-			<input class="Guess_the_Movie_Clip" name="Guess_the_Movie_Clip" type="checkbox" value="Guess the Movie Clip">
+			<input class="Guess_the_Movie_Clip" id="Guess_the_Movie_Clip" name="Guess_the_Movie_Clip" type="checkbox" value="Guess the Movie Clip">
 
 		<label class="Brick_Walk_label">Brick Walk</label>
-			<input class="Brick_Walk" name="Brick_Walk" type="checkbox" value="Brick Walk">
+			<input class="Brick_Walk" id="Brick_Walk" name="Brick_Walk" type="checkbox" value="Brick Walk">
 
 				
 		<button type="submit" class="login_btn"><center><p class="login_btn_p">Submit</p><center></button>
@@ -145,8 +143,11 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 
 	</div>
 	
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="app.js"></script>
+
 
 </body>
 </html>
