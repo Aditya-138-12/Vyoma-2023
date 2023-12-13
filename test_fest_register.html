@@ -2,6 +2,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
 <style>
 
 @media (max-width:480px){
@@ -144,51 +146,7 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 	</div>
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-<script type="text/javascript">
-
- const firebaseConfig = {
-
-    apiKey: "AIzaSyBNNaKxQtvUsFoQNcGSKGmdMUYd3BE9Zmg",
-
-    authDomain: "vyoma-579da.firebaseapp.com",
-
-    databaseURL: "https://vyoma-579da-default-rtdb.asia-southeast1.firebasedatabase.app",
-
-    projectId: "vyoma-579da",
-
-    storageBucket: "vyoma-579da.appspot.com",
-
-    messagingSenderId: "479235214373",
-
-    appId: "1:479235214373:web:c98f9f08a959b996c3c3cc"
-
-  };
-
-firebase.initializeApp(firebaseConfig);
-
-var DBVyoma = firebase.databse().ref("VyomaDB");
-
-document.getElementById("form_1").addEventListener("submit", submitform);
-
-function submitform(e){
-
-	e.preventDefault();
-
-	var Name = getelemval('name');
-	var College_Name = getelemval('clg_name');
-	var USN = getelemval('USN');
-	var Phone_Number = getelemval('phone_number');
-	var Dept_Choice = getelemval('dept_choice');
-
-	console.log(Name,College_Name,USN);
-
-}
-
-const getelemval = (id) => {
-	return document.getElementById(id).value;
-};
-
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
