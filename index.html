@@ -105,6 +105,11 @@ font-family: font_no;
 src: url("WolfalconRegular-RpjW3.ttf");
 }
 
+@font-face{
+font-family: main_font;
+src: url("ARABOLIC.TTF");
+}
+
 body{background:black;}
 
 .main_font{
@@ -140,7 +145,7 @@ text-shadow:0vw 0vw 0.5vw white;
 .top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
 
 .top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
-.top_div_tittle_p{opacity:0; font-family:font2; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:2s opacity_tittle forwards; animation-delay:0.3s;}
+.top_div_tittle_p{opacity:0; font-family:main_font; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:2s opacity_tittle forwards; animation-delay:0.3s;}
 
 .top_div_vertical_line{position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
 
@@ -161,9 +166,12 @@ text-shadow:0vw 0vw 0.5vw white;
 
 .main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden; transition:1s ease;}
 .main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.2s reveal_astronaut forwards; animation-delay: 0.15s;}
-.main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation:1.5s astronaut_float infinite ease-in; animation-direction: alternate-reverse;}
-.main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:27vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent;}
-.main_content_1_astronaut_circle_2{position:absolute; height:98vw; width:97vw; top:16.3vw; left:1vw; border-radius:50%; border:1vw solid white; background:transparent;}
+.main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation-name:astronaut_float, astronaut_rev; animation-duration:1.5s, 1.5s; animation-iteration-count:infinite, 1; animation-direction:alternate-reverse, normal; animation-timing-function:ease-in; animation-fill-mode:forwards, forwards; animation-delay:1s, 1s; opacity:0;}
+
+ 
+
+.main_content_1_astronaut_circle_1{position:absolute; height:77vw; width:77vw; top:27vw; left:11.5vw; border-radius:50%; border:1vw solid white; background:transparent; animation:1s astro_circle_1 forwards ease-in;}
+.main_content_1_astronaut_circle_2{position:absolute; height:98vw; width:97vw; top:16.3vw; left:1vw; border-radius:50%; border:1vw solid white; background:transparent; animation:1s astro_circle_2 forwards ease-in; animation-delay:1s; left:-100vw;}
 
 .main_content_1_astronaut_planet_1{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b1.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:0.87s, 0.9s;}
 .main_content_1_astronaut_planet_2{position:absolute; opacity:0; display:; height:10vw; width:10vw; top:62vw; left:47vw; background-image:url("b2.png"); background-repeat:no-repeat; animation:blob,planets_reveal; animation-duration:8s, 3s; animation-iteration-count:infinite, 1; animation-fill-mode:none, forwards; animation-timing-function:linear; animation-delay:1.74s, 1.8s;}
@@ -256,19 +264,19 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_4_sponsors_top_animaiton_div_glow_div{position: absolute; height:1vw; width:100%; top:20vw; left:0vw; background-color: white; animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_4_sponsors_top_animaiton_div_p_1{position: absolute; color:white; top:-10vw; left:default; font-size:10vw; font-family: font1; animation:5s sponsors_move_p_1 infinite linear;}
 .main_content_4_sponsors_top_animaiton_div_p_2{position: absolute; color:white; top:-10vw; left:-40vw; font-size:10vw; font-family: font1; animation:5s sponsors_move_p_2 infinite linear; animation-delay:3s;}
-.main_content_4_sponsors_1{position:absolute; height:50vw; width:50vw; top:25vw; left:27vw; border-radius:50%; background-color:white; transition:1s ease;}
+.main_content_4_sponsors_1{position:absolute; height:50vw; width:50vw; top:25vw; left:27vw; border-radius:50%; background-color:rgba(255,255,255,1); transition:1s ease;}
 .main_content_4_sponsors_1_photo{position:absolute; height:30vw; width:30vw; top:6vw; left:10.5vw; background-image:url("clg_logo.jpeg"); background-repeat:no-repeat; background-size:100% 100%;  transition:1s ease;}
 .main_content_4_sponsors_1:hover{border-radius:0%; transition:1s ease;}
 .main_content_4_sponsors_1:hover .main_content_4_sponsors_1_photo{top:2vw; transition:1s ease;}
 .main_content_4_sponsors_1_p{position:absolute; top:26vw; left:13vw; font-size:8vw; font-family:steamy; opacity:0;  transition:1s ease;}
 .main_content_4_sponsors_1:hover .main_content_4_sponsors_1_p{opacity:1; transition:1s ease;}
 
-.main_content_4_sponsors_2{position:absolute; height:50vw; width:50vw; top:90vw; left:27vw; border-radius:50%; background-color:#f6f6f6; transition:1s ease;}
-.main_content_4_sponsors_2_photo{position:absolute; height:30vw; width:30vw; top:6vw; left:10.5vw; background-image:url("aero_sjcit.jpeg"); background-repeat:no-repeat; background-size:100% 100%;  transition:1s ease;}
+.main_content_4_sponsors_2{position:absolute; height:50vw; width:50vw; top:90vw; left:26vw; border-radius:50%; background-color:black; transition:1s ease;}
+.main_content_4_sponsors_2_photo{position:absolute; height:45vw; width:45vw; top:0vw; left:3.5vw; background-image:url("aero_sjcit.jpeg"); background-repeat:no-repeat; background-size:100% 100%;  transition:1s ease; border-radius:40vw;}
 .main_content_4_sponsors_2:hover{border-radius:0%; transition:1s ease;}
-.main_content_4_sponsors_2:hover .main_content_4_sponsors_2_photo{top:2vw; transition:1s ease;}
+.main_content_4_sponsors_2:hover .main_content_4_sponsors_2_photo{top:0vw; transition:1s ease;}
 .main_content_4_sponsors_2_p{position:absolute; top:26vw; left:7vw; font-size:8vw; font-family:steamy; opacity:0;  transition:1s ease;}
-.main_content_4_sponsors_2:hover .main_content_4_sponsors_2_p{opacity:1; transition:1s ease;}
+.main_content_4_sponsors_2:hover .main_content_4_sponsors_2_p{opacity:1; transition:1s ease; color:white;}
 
 .main_content_5_footer{position:absolute; height:195vw; width:100%; top:776.5vw; left:0vw;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
@@ -317,7 +325,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 .flashmob_trial{position:absolute; height:185vw; width:100%; top:23vw; left:0vw; background-image:url("flashmob.jpeg"); background-repeat:no-repeat; background-size:100% 100%; transition:1s ease; cursor:default; display:none;}
 .flashmob_trial_photo{position:absolute; color:white; font-family:steamy; font-size:17vw; top:100vw; left:1vw; font-weight:normal; opacity:0.9;}
-.flash_mob_date{position:absolute; color:white; font-family:font2; font-size:10vw; left:5vw; top:130vw;}
+.flash_mob_date{position:absolute; color:white; font-family:font2; font-size:10vw; left:10vw; top:130vw;}
 .flashmob_close{position:absolute; color:red; width:35vw; height:12vw; background-color:#CA42A9; border:0.5vw solid black; border-radius:10vw; right:33vw; top:165vw; opacity:0.8;}
 .flashmob_close_p{position:absolute; top:-8vw; left:6.7vw; font-size:8vw; color:white;}
 
@@ -327,6 +335,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .animation_change_page_inside_bottom{display:none; position:absolute; height:15vw; width:100%; bottom:0vw; left:0vw; background-color:black;}
 .animation_change_page_inside_left{display:none; position:absolute; height:100%; width:15vw; top:0vw; left:0vw; background-color:black;}
 .animation_change_page_inside_right{display:none; position:absolute; height:100%; width:15vw; top:0vw; right:0vw; background-color:black;}
+
+.grad_1{position:absolute; height:177vw; width:100%; top:0vw; left:0vw;   background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(105,1,255,1) 100%);  opacity:0.5; z-index:-100;}
+
+.grad_2{position:absolute; height:255vw; width:100%; top:302vw; left:0vw;     background: rgb(28,1,255);
+background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%);    opacity:0.5; z-index:-100; filter:blur(0vw);}
+
+.grad_2_img{position:absolute; width:100%; height:230vw; top:547vw; left:0vw; z-index:-100; background-image:url("rocket_img_grad_2.png"); background-repeat:no-repeat; background-size:cover;}
 
 @keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
@@ -365,7 +381,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 @keyframes page_anm_left{from{left:-15vw;} to{left:0vw;}}
 @keyframes page_anm_right{from{right:-15vw;} to{right:0vw;}}
 @keyframes page_anm_top_full{from{height:15vw;} to{height:100%;}}
-
+@keyframes astronaut_rev{from{opacity:0;} to{opacity:1;}}
+@keyframes astro_circle_1{from{height:1000vw; width:1000vw; top:-500vw; left:-300vw;} to{height:77vw; width:77vw; top:27vw; left:11.5vw;}}
+@keyframes astro_circle_2{from{height:1000vw; width:1000vw; top:-500vw; left:-300vw;} to{height:97vw; width:98vw; top:16.3vw; left:1vw;}}
 
 /*@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}*/
 @keyframes move1{from{top:74vw;} to{top:70vw;}}
@@ -432,7 +450,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 	<div class="main_1_head_animation"></div>
 	<p class="head_p_1">It's Time To Fly.</p>
 	<p class="head_p_2">2K23</p>
-	<p class="head_p_3">18 - 25 December</p>
+	<p class="head_p_3">3rd January</p>
 </div>
 
 <div class="main_content_1_rotating_planets_with_astronaut" id="main_content_1_rotating_planets_with_astronaut">
@@ -578,11 +596,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 <div class="flashmob_trial" id="flash_trial" style="display:none;">
 	<p class="flashmob_trial_photo">FLASHMOB</p>
-	<p class="flash_mob_date">15 December, 2023</p>
+	<p class="flash_mob_date">2 January, 2023</p>
 	<button class="flashmob_close" onclick="flash_mob_close(); stop_song()"><p class="flashmob_close_p">Close</p></button>
 </div>
 
 <audio id="song_play" src="house_memory.mp3"></audio>
+
+<div class="grad_1"></div>
+<div class="grad_2"></div>
+<div class="grad_2_img"></div>
+
 
 <script type="text/javascript">
 
