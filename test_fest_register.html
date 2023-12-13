@@ -65,7 +65,7 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 .techinical_events{position:absolute; top:100vw; left:7vw; height:170vw; width:85%;  background-color:rgba(0,0,0,0.8); z-index:-10; border:1vw solid black; border-radius:5vw;}
 
 .go_back{position:absolute; height:15vw; width:15vw; top:273vw; right:10vw; background-color:black; border-radius:50%;}
-.go_back_p{position:absolute; font-size:6vw; color:white; top:-2vw; left:1vw;} 
+.go_back_p{position:absolute; font-size:6vw; color:white; top:-2vw; left:1.2vw;} 
 
 }
 
@@ -76,11 +76,11 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 	<div class="box_1">
 
 	<div class="top_photo"><p>Registration Form</p></div>
-	<form class="form_1" method="GET" action="https://14cb8fdbe6d6892b30930887a719cdf3.serveo.net/valdi.php">
-		<input class="name" name="name" type="text" placeholder="Enter Your Name" required>
-		<input class="clg_name" name="clg_name" type="text" placeholder="Enter College Name" required>
-		<input class="USN" name="usn" type="text" placeholder="Enter Your USN" required>
-		<input class="phone_number" name="phone_number" type="text" placeholder="Enter Your Mobile Number" required>
+	<form class="form_1" id="form_1" method="" action="">
+		<input id="name" class="name" name="name" type="text" placeholder="Enter Your Name" required>
+		<input id="clg_name" class="clg_name" name="clg_name" type="text" placeholder="Enter College Name" required>
+		<input id="USN" class="USN" name="usn" type="text" placeholder="Enter Your USN" required>
+		<input id="phone_number" class="phone_number" name="phone_number" type="text" placeholder="Enter Your Mobile Number" required>
 		<select id="dept_choice" name="dept_choice" class="dept_choice"> 
 			<option value="CSE">CSE</option>
 			<option value="AI&ML">AI&MK</option>
@@ -96,10 +96,10 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 		</select>
 		
 		<label class="space_quiz_label">Space Quiz</label>
-			<input class="space_quiz" name="space_quiz" type="checkbox" value="Space Quiz">
+			<input id="space_quiz" class="space_quiz" name="space_quiz" type="checkbox" value="Space Quiz">
 		
 		<label class="poster_presentation_label">Poster Presentation</label>
-			<input class="poster_presentation" name="poster_presentation" type="checkbox" value="Poster Presentation">
+			<input id="poster_presentation" class="poster_presentation" name="poster_presentation" type="checkbox" value="Poster Presentation">
 
 		<label class="model_making_label">Model Making</label>
 			<input class="model_making" name="model_making" type="checkbox" value="Model Making">
@@ -142,6 +142,53 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 	<center><div class="techinical_events"><p class="tech_events_heading" style="font-size:8vw; color:white; margin-top:2vw; font-weight:bold;">Technical Events</p><p class="non_tech_events_heading" style="font-size:7vw; color:white; font-weight:bold; margin-top:46vw;">Non-Technical Events</p></div></center>
 
 	</div>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script type="text/javascript">
+
+ const firebaseConfig = {
+
+    apiKey: "AIzaSyBNNaKxQtvUsFoQNcGSKGmdMUYd3BE9Zmg",
+
+    authDomain: "vyoma-579da.firebaseapp.com",
+
+    databaseURL: "https://vyoma-579da-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+    projectId: "vyoma-579da",
+
+    storageBucket: "vyoma-579da.appspot.com",
+
+    messagingSenderId: "479235214373",
+
+    appId: "1:479235214373:web:c98f9f08a959b996c3c3cc"
+
+  };
+
+firebase.initializeApp(firebaseConfig);
+
+var DBVyoma = firebase.databse().ref("VyomaDB");
+
+document.getElementById("form_1").addEventListener("submit", submitform);
+
+function submitform(e){
+
+	e.preventDefault();
+
+	var Name = getelemval('name');
+	var College_Name = getelemval('clg_name');
+	var USN = getelemval('USN');
+	var Phone_Number = getelemval('phone_number');
+	var Dept_Choice = getelemval('dept_choice');
+
+	console.log(Name,College_Name,USN);
+
+}
+
+const getelemval = (id) => {
+	return document.getElementById(id).value;
+};
+
+</script>
 
 </body>
 </html>
