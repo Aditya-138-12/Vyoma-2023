@@ -15,8 +15,6 @@ const database = firebase.database();
 
 const form = document.getElementById("form_1");
 
-let registration_number=0;
-
 let tech_events = [];
 let non_tech_events = [];
 
@@ -72,7 +70,7 @@ form.addEventListener("submit", (e)=>{
 	else{}
 	
 	
-	database.ref(`'${registration_number}'`+" Number "+usn).set({
+	database.ref("Participants/"+usn).set({
 		Name : name,
 		NameOfInstitution : clg_name,
 		Department : dept_choice,
@@ -82,7 +80,6 @@ form.addEventListener("submit", (e)=>{
 		NonTechEvents : non_tech_events
 	})
 	
-	registration_number = registration_number+1;
 	console.log(tech_events);
 	console.log(non_tech_events);
 	
