@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta name="theme-color" content="black">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 <style>
@@ -11,20 +10,20 @@ src:url("Vampire Wars Italic.ttf");
 }
 
 a{text-decoration:none; color:white; font-family:JetBrains Mono,monospace;}
-.home{margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
+.home{height:1vw; margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
 .home:hover{color:rgb(192,192,255); transition:1500ms ease;}
-.about{margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
+.about{height:1vw; margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
 .about:hover{color:rgb(192,192,255); transition:1500ms ease;}
-.events{margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
+.events{height:1vw; margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
 .events:hover{color:rgb(192,192,255); transition:1500ms ease;}
-.sponsor{margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
+.sponsor{height:1vw; margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
 .sponsor:hover{color:rgb(192,192,255); transition:1500ms ease;}
-.timeline{margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
+.timeline{height:1vw; margin-right:2.5rem; font-size:1.05rem; color:rgb(202 192 179); transition:300ms ease;}
 .timeline:hover{color:rgb(192,192,255); transition:1500ms ease;}
 .top_menu{padding:1.5vw 0vw; display:flex; justify-content:right;}
 .register_div{
 margin-right:2.5rem;
-margin-top:-1vw;
+margin-top:-1.7vw;
 clip-path:polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px);
 background:;
 background:white;
@@ -38,7 +37,7 @@ font-family:JetBrains Mono,monospace;
 cursor:pointer;
 transition:100ms ease;
 }
-.p_reg{margin-top:0.85vw;}
+.p_reg{position:relative; top:.85vw; color:white	; font-weight:;}
 .register_div:hover{transform:scale(1.2); transition:300ms ease;}
 
 .decode_ip_addr_div{
@@ -115,8 +114,8 @@ body{background:black;}
 
 .main_font{
 position:absolute;
-top:13vw;
-left:30vw;
+top:0vw;
+left:28.2vw;
 cursor:default;
 text-shadow:0vw 0vw 0.5vw white;
 }
@@ -124,6 +123,25 @@ text-shadow:0vw 0vw 0.5vw white;
 @keyframes anm_fade{from{opacity:1;} to{opacity:0;}}
 @keyframes anm_defade{from{opacity:0;} to{opacity:1;}}
 
+
+/* Desktop Disable###################################################### */
+
+.options{display:none;}
+.top_div{display:none;}
+.top_div_animation{display:none;}
+.top_div_tittle{display:none;}
+.animation_change_page{display:none;}
+.main_1_head{display:none;}
+.main_content_1_rotating_planets_with_astronaut{display:none;}
+.main_content_2_about{display:none;}
+.main_content_3_events{display:none;}
+.main_content_4_sponsors{display:none;}
+.main_content_5_footer{display:none;}
+.flashmob_trial{display:none;}
+.grad_1{display:none;}
+.grad_2{display:none;}
+.grad_2_img{display:none;}
+/* ##################################################################### */
 
 
 @media (max-width:480px){
@@ -133,39 +151,43 @@ text-shadow:0vw 0vw 0.5vw white;
 .decode_ip_addr2{display:none;}
 .main_font{display:none;}
 .top_menu{display:none;}
+.top_div_vertical_line{display:none;}
+.top_div_horizontal_line{display:none;}
+.top_div_menu{display:none;}
 
 
-.options{position:absolute; display:; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000; overflow:hidden;}
+
+.options{position:absolute; display:block; height:0vw; width:100%; top:23vw; left:0vw; background-color:black; z-index:1000000; overflow:hidden;}
 .options_events{position:absolute; font-size:10vw; font-family:font1; left:35vw; top:10vw; letter-spacing:.5vw; opacity:0;}
 .options_abt{position:absolute; font-size:10vw; font-family:font1; left:35.8vw; top:23vw; letter-spacing:.5vw; opacity:0;}
 .options_gall{position:absolute; font-size:10vw; font-family:font1; left:34vw; top:36vw; letter-spacing:.5vw; opacity:0;}
 .options_team{position:absolute; font-size:10vw; font-family:font1; left:37.5vw; top:49vw; letter-spacing:.5vw; opacity:0;}
 .options_reg{position:absolute; font-size:10vw; font-family:font1; left:32.5vw; top:62vw; letter-spacing:.5vw; opacity:0;}
 
-.top_div{position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%; overflow:hidden;}
-.top_div_animation{position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
+.top_div{display:block; position:absolute; height:22vw; width:100%; top:0; left:0; background-color:none; background-image:url("stars.png"); background-repeat:no-repeat; background-size:400% 400%; overflow:hidden;}
+.top_div_animation{display:block; position:absolute; width:100%; height:22vw; top:0vw; left:0vw; background-color: white; animation:1s reveal_top_menu forwards; animation-delay:0.1s;}
 
-.top_div_tittle{position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
+.top_div_tittle{display:block; position:absolute; height:22vw; width:75%; top:0vw; left:0vw; background-color:none; cursor:default;}
 .top_div_tittle_p{opacity:0; font-family:main_font; color:white; font-size:20vw; margin-left:2vw; margin-top:-3.5vw; line-height:; text-shadow:0vw 0vw 2vw white; animation:2s opacity_tittle forwards; animation-delay:0.3s;}
 
-.top_div_vertical_line{position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
+.top_div_vertical_line{display:block; position:absolute; height:100%; width:1vw; top:0; left:74vw; background-color:white;}
 
-.top_div_horizontal_line{position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
+.top_div_horizontal_line{display:block; position:absolute; height:1vw; width:100%; top:22vw; left:0vw; background-color:white;}
 
-.top_div_menu{position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; z-index:10000;}
+.top_div_menu{display:block; position:absolute; height:80%; width:20vw; top:2.5vw; right:0.5vw; z-index:10000;}
 .top_div_menu_button{position:absolute; height:100%; width:100%; background-color:transparent; border:none;}
 .top_div_menu:hover .options{display:block;}
 .menu_line_1{position:absolute; height:0.7vw; width:5.5vw; top:6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.1s;}
 .menu_line_2{position:absolute; height:0.7vw; width:9.5vw; top:8.6vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.17s;}
 .menu_line_3{position:absolute; height:0.7vw; width:14vw; top:10.85vw; left:1.5vw; background-color:white; animation:0.7s menu_line_reveal forwards; animation-delay:0.22s;}
 
-.main_1_head{position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:150% 150%; overflow:hidden;}
+.main_1_head{display:block; position:absolute; height:55vw; width:100%; top:22vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:150% 150%; overflow:hidden;}
 .main_1_head_animation{position:absolute; height:55vw; width:100%; top:0vw; left:0vw; background-color: white; animation:1s reveal_main_1_head forwards; animation-delay:0.15s;}
 .head_p_1{font-family:font1; margin-top:10vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white; animation:1s scale_head_p forwards; animation-delay:0.18s;}
 .head_p_2{font-family:font_no; margin-top:-14vw; text-align:center; color:white; font-size:20vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 .head_p_3{font-family:font1; margin-top:-23vw; text-align:center; color:white; font-size:8vw; text-shadow: 0vw 0vw 1vw white;  animation:1s scale_head_p forwards; animation-delay:0.18s;}
 
-.main_content_1_rotating_planets_with_astronaut{position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden; transition:1s ease;}
+.main_content_1_rotating_planets_with_astronaut{display:block; position:absolute; height:130vw; width:100%; top:78vw; left:0vw; border-bottom:1vw solid white; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; overflow:hidden; transition:1s ease;}
 .main_content_1_rotating_planets_with_astronaut_animation{z-index:10000; position:absolute; width:100%; height:100%; top:0vw; left:0vw; background-color: white; animation:1.2s reveal_astronaut forwards; animation-delay: 0.15s;}
 .main_content_1_astronaut{position:absolute; height:80vw; width:61vw; top:21vw; left:21.5vw; background-image:url("astro_bb-removebg.png"); background-repeat:no-repeat; background-size:100% 100%; animation-name:astronaut_float, astronaut_rev; animation-duration:1.5s, 1.5s; animation-iteration-count:infinite, 1; animation-direction:alternate-reverse, normal; animation-timing-function:ease-in; animation-fill-mode:forwards, forwards; animation-delay:1s, 1s; opacity:0;}
 
@@ -186,11 +208,11 @@ text-shadow:0vw 0vw 0.5vw white;
 
 .cont_main_astro_move{position:absolute; background-color: #4158D0; top:-10vw; height: auto; width: auto; }
 
-.main_content_2_about{position: absolute; height:275vw; width:100%; top:199vw; left:0vw ; background-image:url("stars.png"); background-repeat: no-repeat; background-size:cover;  overflow-x:hidden; border-bottom:1vw solid white;}
+.main_content_2_about{display:block; position: absolute; height:275vw; width:100%; top:199vw; left:0vw ; background-image:url("stars.png"); background-repeat: no-repeat; background-size:cover;  overflow-x:hidden; border-bottom:1vw solid white; opacity:0; transition:2s;}
 .main_content_1_about_gif{position: absolute; height:120vw; width:149vw; top:25vw; left:-32vw; background:; background-image:url("back_2.gif"); background-repeat: no-repeat; background-size:110% 110%;}
 .main_content_1_about_gif_star_cover{position: absolute; height:140vw; width:100%; top:10vw; left:0vw; background-image: url("stars.png"); background-repeat: no-repeat; background-size: 120% 120%;}
 .main_content_1_about_logo{position: absolute; height:90vw; width:90vw; top:42vw; left:7vw; background-image: url("Group\ 13889.png"); background-repeat: no-repeat; background-size: 100% 100%;}
-.main_content_2_about_top_animaiton_div{position: absolute; top:0vw; left:0vw; height: 20vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
+.main_content_2_about_top_animaiton_div{display:block; position: absolute; top:0vw; left:0vw; height: 20vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_2_about_top_animaiton_div_glow_div{position: absolute; height:1vw; width:100%; top:20vw; left:0vw; background-color: white; animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_2_about_top_animaiton_div_p_1{position: absolute; color:white; top:-1vw; left:default; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear;}
 .main_content_2_about_top_animaiton_div_p_2{position: absolute; color:white; top:-1vw; left:-30vw; font-size:10vw; font-family: font1; animation:5s about_move_p_2 infinite linear; animation-delay:3s;}
@@ -201,7 +223,7 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_2_about_p_vy3{font-family:steamy; font-size:10vw; line-height:12vw; opacity:;}
 
 
-.main_content_3_events{position:absolute; top:475vw; left:0vw; height:140vw; width:100%; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; border-bottom:1vw solid white;}
+.main_content_3_events{display:block; position:absolute; top:475vw; left:0vw; height:140vw; width:100%; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; border-bottom:1vw solid white;}
 
 .main_content_3_events_top_animaiton_div{position: absolute; top:0vw; left:0vw; height:10vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_3_events_top_animaiton_div_p_1{position: absolute; color:white; top:-10vw; left:default; font-size:10vw; font-family: font1; animation:5s about_move_p_1 infinite linear;}
@@ -260,7 +282,7 @@ text-shadow:0vw 0vw 0.5vw white;
 
 .main_content_3_events_scroll_p{position:absolute; font-size:8.5vw; font-family:steamy; color:white; top:115vw; left:14vw; animation:.5s font infinite; animation-direction:alternate-reverse;}
 
-.main_content_4_sponsors{position:absolute; height:160vw; width:100%; top:616vw; left:0vw; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; border-bottom:1vw solid white;}
+.main_content_4_sponsors{display:block; position:absolute; height:160vw; width:100%; top:616vw; left:0vw; background-image:url("stars.png"); background-repeat:no-repeat; background-size:100% 100%; border-bottom:1vw solid white;}
 .main_content_4_sponsors_top_animaiton_div{position: absolute; top:0vw; left:0vw; height: 10vw; width: 100%; border-bottom: 1vw solid white;  overflow: hidden;  animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_4_sponsors_top_animaiton_div_glow_div{position: absolute; height:1vw; width:100%; top:20vw; left:0vw; background-color: white; animation:2s about_border_bottom_animation infinite linear; animation-direction:alternate-reverse;}
 .main_content_4_sponsors_top_animaiton_div_p_1{position: absolute; color:white; top:-10vw; left:default; font-size:10vw; font-family: font1; animation:5s sponsors_move_p_1 infinite linear;}
@@ -279,7 +301,7 @@ text-shadow:0vw 0vw 0.5vw white;
 .main_content_4_sponsors_2_p{position:absolute; top:26vw; left:7vw; font-size:8vw; font-family:steamy; opacity:0;  transition:1s ease;}
 .main_content_4_sponsors_2:hover .main_content_4_sponsors_2_p{opacity:1; transition:1s ease; color:white;}
 
-.main_content_5_footer{position:absolute; height:195vw; width:100%; top:776.5vw; left:0vw;background: rgb(2,0,36);
+.main_content_5_footer{display:block; position:absolute; height:195vw; width:100%; top:776.5vw; left:0vw;background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);}
 .main_content_5_footer_top_div{background-color:none; width:100%; height:35vw;}
 .main_content_5_footer_top_div_p1{position:absolute; font-size:4.5vw; color:orange; left:27vw; top:5vw; text-align:center; cursor:default; font-weight:100;}
@@ -324,7 +346,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .main_content_5_footer_bottom_addr_h{position:absolute; font-size:8vw; top:127vw; left:36vw; font-family:steamy; color:white; animation:1s color_change infinite linear; animation-direction:alternate-reverse; cursor:default;}
 .main_content_5_footer_bottom_addr_p{position:absolute; font-size:5.5vw; top:143vw; text-align:center; left:10vw; font-family:font1; color:white; animation:1s color_change infinite linear; animation-direction:alternate-reverse; cursor:default;}
 
-.flashmob_trial{position:absolute; height:185vw; width:100%; top:23vw; left:0vw; background-image:url("flashmob.jpeg"); background-repeat:no-repeat; background-size:100% 100%; transition:1s ease; cursor:default; display:none;}
+.flashmob_trial{display:block; position:absolute; height:185vw; width:100%; top:23vw; left:0vw; background-image:url("flashmob.jpeg"); background-repeat:no-repeat; background-size:100% 100%; transition:1s ease; cursor:default; display:none;}
 .flashmob_trial_photo{position:absolute; color:white; font-family:steamy; font-size:17vw; top:100vw; left:1vw; font-weight:normal; opacity:0.9;}
 .flash_mob_date{position:absolute; color:white; font-family:font2; font-size:10vw; left:10vw; top:130vw;}
 .flashmob_close{position:absolute; color:red; width:35vw; height:12vw; background-color:#CA42A9; border:0.5vw solid black; border-radius:10vw; right:33vw; top:165vw; opacity:0.8;}
@@ -337,13 +359,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .animation_change_page_inside_left{display:none; position:absolute; height:100%; width:15vw; top:0vw; left:0vw; background-color:black;}
 .animation_change_page_inside_right{display:none; position:absolute; height:100%; width:15vw; top:0vw; right:0vw; background-color:black;}
 
-.grad_1{position:absolute; height:177vw; width:100%; top:0vw; left:0vw;   background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(105,1,255,1) 100%);  opacity:0.5; z-index:-100;}
+.grad_1{display:block; position:absolute; height:177vw; width:100%; top:0vw; left:0vw;  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(76,54,255,1) 100%);   opacity:0.5; z-index:-100;}
 
-.grad_2{position:absolute; height:255vw; width:100%; top:302vw; left:0vw;     background: rgb(28,1,255);
+.grad_2{display:block; position:absolute; height:255vw; width:100%; top:302vw; left:0vw;     background: rgb(28,1,255);
 background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%);    opacity:0.5; z-index:-100; filter:blur(0vw);}
 
-.grad_2_img{position:absolute; width:100%; height:230vw; top:547vw; left:0vw; z-index:-100; background-image:url("rocket_img_grad_2.png"); background-repeat:no-repeat; background-size:cover;}
+.grad_2_img{display:block; position:absolute; width:100%; height:230vw; top:547vw; left:0vw; z-index:-100; background-image:url("rocket_img_grad_2.png"); background-repeat:no-repeat; background-size:cover;}
 
 @keyframes blob{from{transform:rotate(0deg)translateY(45vw)rotate(0deg)} to{transform:rotate(360deg)translateY(43vw)rotate(-360deg)}}
 @keyframes font{0%{text-shadow: 0vw 0vw 0vw black;} 100%{text-shadow: 0vw 0vw 1vw white;}}
@@ -389,8 +411,6 @@ background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%)
 /*@keyframes about_border_bottom_animation{from{border-bottom-color:white; box-shadow: 0vw 0vw 0vw rgb(0, 0, 0);} to{border-bottom-color:white; box-shadow:0vw 0vw 5vw blue;}}*/
 @keyframes move1{from{top:74vw;} to{top:70vw;}}
 /*Write JS code so that all the blobs should appear when their animation is started, now they first appear in middle and after that they go in circle animation.-- Done without js.*/
-
-
 }
 
 
@@ -400,7 +420,7 @@ background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%)
 
 <body>
 
-<p class="main_font" style="font-family:font2; color:white; font-size:12vw;">VYOMA</p>
+<p class="main_font" style="font-family:main_font; color:white; font-size:12vw;">VYOMA</p>
 
 <div class="ip"><div class="decode_ip_addr_div"></div>
 <p id="let" class="decode_ip_addr1" style="font-family:font2; color:white; font-size:4vw;">20.5.3.8..9.19..6.1.20.1.12</p>
@@ -413,7 +433,7 @@ background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%)
 <a href="#" class="events">Events</a>
 <a href="#" class="sponsor">Sponsors</a>
 <a href="#" class="timeline">TimeLine</a>
-<div class="register_div"><p class="p_reg">Register</p></div>
+<a href="test_fest_register.html"><div class="register_div"><p class="p_reg">Register</p></div></a>
 </div>
 
 
@@ -610,6 +630,20 @@ background: linear-gradient(0deg, rgba(28,1,255,1) 0%, rgba(246,246,246,0) 100%)
 
 <script type="text/javascript">
 
+const elements = ["main_1_head", "main_content_1_rotating_planets_with_astronaut", "main_content_2_about", "main_content_3_events", "main_content_4_sponsors"];
+
+document.addEventListener("scroll", function(){console.log(window.scrollY);
+
+if(window.scrollY > 300 && window.scrollY < 1700){
+	
+	document.getElementById("main_content_2_about").style.opacity="1";
+	
+}
+else{
+	document.getElementById("main_content_2_about").style.opacity="0";
+}
+});
+
 function menu(){
 console.log("called");
 var a=document.getElementById("options")
@@ -652,7 +686,7 @@ team.style.animation="0.2s menu_dereveal_team forwards";
 team.style.animationDelay="0s";
 reg.style.animation="0.2s menu_dereveal_reg forwards";
 reg.style.animationDelay="0s";
-a.style.animation="2s menu_box_dereveal forwards";
+a.style.animation="0.5s menu_box_dereveal forwards";
 a.style.height="0vw";
 line1.style.animation="0.5s menu_line_1_renew forwards";
 line3.style.animation="0.5s menu_line_3_renew forwards";
