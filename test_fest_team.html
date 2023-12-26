@@ -319,7 +319,7 @@ body{background:black;}
 	</div>
 </div>
 
-<div class="main_team_div">
+<div class="main_team_div" id="main_team_div">
 	<div class="main_team_div_top"><p class="main_team_div_top_p">Team</p></div>
 	<div class="main_team_div_anm" id="main_team_div_anm" style="background-color:;"></div>
 	<div class="main_team_SR_div" id="main_team_SR_div" style="z-index:-10;">
@@ -367,8 +367,8 @@ var team=document.getElementById("team");
 var reg=document.getElementById("register");
 var line1=document.getElementById("menu_line_1");
 var line3=document.getElementById("menu_line_3");
-var back_blur=document.getElementById("main_content_1_rotating_planets_with_astronaut");
-var back_blur_2=document.getElementById("flash_trial");
+var back_blur=document.getElementById("main_team_div");
+//var back_blur_2=document.getElementById("flash_trial");
 
 if(a.style.height==="0vw"){
 a.style.animation="0.5s menu_box_reveal forwards";
@@ -386,7 +386,7 @@ line1.style.animation="0.5s menu_line_1 forwards";
 line3.style.animation="0.5s menu_line_3 forwards";
 back_blur.style.filter="blur(5vw)";
 document.body.style.overflow="hidden";
-back_blur_2.style.filter="blur(5vw)";
+//back_blur_2.style.filter="blur(5vw)";
 }
 else{
 event_s.style.animation=".2s menu_dereveal_events forwards";
@@ -399,13 +399,13 @@ team.style.animation="0.2s menu_dereveal_team forwards";
 team.style.animationDelay="0s";
 reg.style.animation="0.2s menu_dereveal_reg forwards";
 reg.style.animationDelay="0s";
-a.style.animation="2s menu_box_dereveal forwards";
+a.style.animation="0.5s menu_box_dereveal forwards";
 a.style.height="0vw";
 line1.style.animation="0.5s menu_line_1_renew forwards";
 line3.style.animation="0.5s menu_line_3_renew forwards";
 back_blur.style.filter="blur(0vw)";
 document.body.style.overflow="scroll";
-back_blur_2.style.filter="blur(0vw)";
+//back_blur_2.style.filter="blur(0vw)";
 
 }
 }
