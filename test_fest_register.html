@@ -67,6 +67,27 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 .go_back{position:absolute; height:15vw; width:15vw; top:273vw; right:10vw; background-color:black; border-radius:50%;}
 .go_back_p{position:absolute; font-size:6vw; color:white; top:-2vw; left:1.2vw;} 
 
+.animation_change_page{display:block; position:fixed; height:100%; width:100%; top:0vw; left:0vw; background-color:; z-index:10000000;}
+.animation_change_page_inside_top{display:block; position:absolute; height:100%; width:100%; top:0vw; left:0vw; background-color:black; animation-name:page_anm_top, page_anm_top_full; animation-duration:2s,1s; animation-delay:1s, 0s; animation-fill-mode:forwards, forwards;}
+.animation_change_page_inside_bottom{display:block; position:absolute; height:15vw; width:100%; bottom:0vw; left:0vw; background-color:black; animation:2s page_anm_bottom forwards; animation-delay:1s;}
+.animation_change_page_inside_left{display:block; position:absolute; height:100%; width:15vw; top:0vw; left:0vw; background-color:black; animation:2s page_anm_left forwards; animation-delay:1s;}
+.animation_change_page_inside_right{display:block; position:absolute; height:100%; width:15vw; top:0vw; right:0vw; background-color:black; animation:2s page_anm_right forwards; animation-delay:1s;}
+
+.submitted{display:none; position:absolute; width:90%; height:40vw; background-color:rgba(255,255,255,0.95); bottom:-20vw; left:5vw;}
+.submitted_p{position:absolute; top:5vw; font-size:5vw;}
+
+@keyframes page_anm_top{from{top:0vw;} to{top:-20vw;}}
+@keyframes page_anm_bottom{from{bottom:0vw;} to{bottom:-20vw;}}
+@keyframes page_anm_left{from{left:0vw;} to{left:-20vw;}}
+@keyframes page_anm_right{from{right:0vw;} to{right:-20vw;}}
+@keyframes page_anm_top_full{from{height:100%;} to{height:15vw;}}
+@keyframes page_anm_top_1{from{top:-15vw;} to{top:0vw;}}
+@keyframes page_anm_bottom_1{from{bottom:-15vw;} to{bottom:0vw;}}
+@keyframes page_anm_left_1{from{left:-15vw;} to{left:0vw;}}
+@keyframes page_anm_right_1{from{right:-15vw;} to{right:0vw;}}
+@keyframes page_anm_top_full_1{from{height:15vw;} to{height:100%;}}
+
+
 }
 
 </style>
@@ -138,15 +159,89 @@ body{margin-top:0px; margin-left:0px; margin-right:0px; height:280vw; background
 		<button type="submit" class="login_btn"><center><p class="login_btn_p">Submit</p><center></button>
 		
 	</form>
-	<a href="index.html"><div class="go_back"><p class="go_back_p">Back</p></div></a>
+	<a href="index.html" id="back"><div class="go_back"><p class="go_back_p">Back</p></div></a>
 	<center><div class="techinical_events"><p class="tech_events_heading" style="font-size:8vw; color:white; margin-top:2vw; font-weight:bold;">Technical Events</p><p class="non_tech_events_heading" style="font-size:7vw; color:white; font-weight:bold; margin-top:46vw;">Non-Technical Events</p></div></center>
 
 	</div>
+
+<div class="animation_change_page" id="animation_change_page" style="display:;">
+	<div class="animation_change_page_inside_top" id="animation_change_page_inside_top" style="display:;"></div>
+	<div class="animation_change_page_inside_bottom" id="animation_change_page_inside_bottom" style="display:;"></div>
+	<div class="animation_change_page_inside_left" id="animation_change_page_inside_left" style="display:;"></div>
+	<div class="animation_change_page_inside_right" id="animation_change_page_inside_right" style="display:;"></div>
+</div>
+
+<div class="submitted" id="submitted">
+	<center><p class="submitted_p">Your Registration is confirmed, You are being redirected to Home Page.</p></center>
+</div>
 	
 <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="app.js"></script>
+
+<script type="text/javascript">
+
+setTimeout(function(){
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="none";
+	animation_change_page_inside_top.style.display="none";
+	animation_change_page_inside_bottom.style.display="none";
+	animation_change_page_inside_left.style.display="none";
+	animation_change_page_inside_right.style.display="none";
+	animation_change_page_inside_top.style.top="-15vw";
+	animation_change_page_inside_top.style.height="15vw";
+	animation_change_page_inside_bottom.style.bottom="-15vw";
+	animation_change_page_inside_left.style.left="-15vw";
+	animation_change_page_inside_right.style.right="-15vw";
+},2000);
+
+document.getElementById("back").addEventListener('click',function(event){
+	event.preventDefault();	
+	var animation_change_page=document.getElementById("animation_change_page");
+	var animation_change_page_inside_top=document.getElementById("animation_change_page_inside_top");
+	var animation_change_page_inside_bottom=document.getElementById("animation_change_page_inside_bottom");
+	var animation_change_page_inside_right=document.getElementById("animation_change_page_inside_right");
+	var animation_change_page_inside_left=document.getElementById("animation_change_page_inside_left");
+	animation_change_page.style.display="block";
+	animation_change_page_inside_top.style.display="block";
+	animation_change_page_inside_bottom.style.display="block";
+	animation_change_page_inside_left.style.display="block";
+	animation_change_page_inside_right.style.display="block";
+	animation_change_page_inside_top.style.animationName="page_anm_top_1, page_anm_top_full_1";
+	animation_change_page_inside_top.style.animationDuration="2s, 1s";
+	animation_change_page_inside_top.style.animationDelay="0s, 2s";
+	animation_change_page_inside_top.style.animationFillMode="forwards, forwards";
+	animation_change_page_inside_bottom.style.animation="2s page_anm_bottom_1 forwards";
+	animation_change_page_inside_left.style.animation="2s page_anm_left_1 forwards";
+	animation_change_page_inside_right.style.animation="2s page_anm_right_1 forwards";
+	
+	
+	setTimeout(() => {
+    	window.location.href = this.href;
+  }, 3000);
+
+});
+
+form.addEventListener("submit", (e)=>{
+
+	e.preventDefault();
+	
+	document.getElementById("submitted").style.display="block";
+	document.body.style.overflow="hidden";
+	
+	setTimeout(()=>{
+		window.location.href="index.html";
+	},3000);
+
+});
+
+
+</script>
 
 
 </body>
