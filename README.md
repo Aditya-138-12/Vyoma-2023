@@ -13,7 +13,7 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 
 <p align="center">hello
   <video width="80%" controls>
-    <source src="https://streamable.com/gisfkr" type="video/mp4">
+    <source src="https://app.weet.co/play/58ee9bfb/create-video-tutorials-with-weet" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
