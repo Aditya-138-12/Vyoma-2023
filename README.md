@@ -13,7 +13,7 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 
  ## Images of the Site
 ### Landing Pages
-![Dashboard Screenshot](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)  ![Dashboard Screenshot](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)
+![Dashboard Screenshot](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)  ![Dashboard Screenshot](https://i.ibb.co/0cn8kPm/vyoma-landing-page-2.png)  ![Dashboard Screenshot](https://i.ibb.co/F6Lxf8T/vyoma-landing-page-3.png) 
 
 ### Student Performance Visualization
 ![Student Performance](https://link-to-student-performance-screenshot)
