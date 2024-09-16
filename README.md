@@ -15,7 +15,7 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 ## Landing Pages
 ![Landing Page - 1](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)  ![Landing Page - 2](https://i.ibb.co/2cQZRvr/vyoma-landing-page-4.png)   ![Landing Page - 3](https://i.ibb.co/0cn8kPm/vyoma-landing-page-2.png)  ![Landing Page - 4](https://i.ibb.co/F6Lxf8T/vyoma-landing-page-3.png)
 
-###= Events Page
+## Events Page
 ![Event Page - 1](https://i.ibb.co/f1v9JnV/vyoma-event-page-1.png)  ![Event Page - 2](https://i.ibb.co/HdcpHnx/vyoma-event-page-2.png)
 
 ### Faculty Impact Dashboard
