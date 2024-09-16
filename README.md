@@ -11,8 +11,13 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
   - Manage and update event details
   - Monitor important metrics and student data
 
-  <iframe src="https://drive.google.com/file/d/1LA1hfhEOTgsfOA1EiaEHZ4YqN_fF2y8A/view?t=13" width="640" height="480" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+# Video from Google Drive
 
+Here is a video embedded from Google Drive:
+
+<iframe src="https://drive.google.com/file/d/1LA1hfhEOTgsfOA1EiaEHZ4YqN_fF2y8A/preview" width="640" height="480" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  
 # Images of the Site
 
 ## Landing Pages
