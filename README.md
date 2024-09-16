@@ -11,15 +11,27 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
   - Manage and update event details
   - Monitor important metrics and student data
 
- # Images of the Site
+# Images of the Site
+
 ## Landing Pages
-![Landing Page - 1](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)  ![Landing Page - 2](https://i.ibb.co/2cQZRvr/vyoma-landing-page-4.png)   ![Landing Page - 3](https://i.ibb.co/0cn8kPm/vyoma-landing-page-2.png)  ![Landing Page - 4](https://i.ibb.co/F6Lxf8T/vyoma-landing-page-3.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="https://i.ibb.co/JqTmWv0/vyoma-landing-1.png" alt="Landing Page - 1" width="300">
+  <img src="https://i.ibb.co/2cQZRvr/vyoma-landing-page-4.png" alt="Landing Page - 2" width="300">
+  <img src="https://i.ibb.co/0cn8kPm/vyoma-landing-page-2.png" alt="Landing Page - 3" width="300">
+  <img src="https://i.ibb.co/F6Lxf8T/vyoma-landing-page-3.png" alt="Landing Page - 4" width="300">
+</div>
 
 ## Events Page
-![Event Page - 1](https://i.ibb.co/f1v9JnV/vyoma-event-page-1.png)  ![Event Page - 2](https://i.ibb.co/HdcpHnx/vyoma-event-page-2.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="https://i.ibb.co/f1v9JnV/vyoma-event-page-1.png" alt="Event Page - 1" width="300">
+  <img src="https://i.ibb.co/HdcpHnx/vyoma-event-page-2.png" alt="Event Page - 2" width="300">
+</div>
 
 ## Register Page
-![Register Page](https://i.ibb.co/86rymjm/vyoma-registration-page.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="https://i.ibb.co/86rymjm/vyoma-registration-page.png" alt="Register Page" width="300">
+</div>
+
 
 ## Tech Stack
 
