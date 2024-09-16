@@ -18,8 +18,8 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 ## Events Page
 ![Event Page - 1](https://i.ibb.co/f1v9JnV/vyoma-event-page-1.png)  ![Event Page - 2](https://i.ibb.co/HdcpHnx/vyoma-event-page-2.png)
 
-### Faculty Impact Dashboard
-![Faculty Dashboard](https://link-to-faculty-dashboard-screenshot)
+## Register Page
+![Register Page](https://i.ibb.co/86rymjm/vyoma-registration-page.png)
 
 ## Tech Stack
 
