@@ -29,9 +29,3 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
    - Connect to the WiFi via credentials
    - Access the site on URL localhost:300
    - Use the dashboard to monitor event participation and manage logistics.
-
-## Installation & Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/vyoma-fest-website.git
