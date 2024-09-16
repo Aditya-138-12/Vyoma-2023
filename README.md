@@ -11,6 +11,16 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
   - Manage and update event details
   - Monitor important metrics and student data
 
+ ## Images of the Site
+### Landing Page
+![Dashboard Screenshot](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)
+
+### Student Performance Visualization
+![Student Performance](https://link-to-student-performance-screenshot)
+
+### Faculty Impact Dashboard
+![Faculty Dashboard](https://link-to-faculty-dashboard-screenshot)
+
 ## Tech Stack
 
 - **Frontend**: HTML/CSS/JavaScript/Firebase
