@@ -13,10 +13,10 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 
 ## Tech Stack
 
-- **Frontend**: [HTML/CSS/JavaScript/Any Frameworks used]
-- **Backend**: [Details about your backend technologies]
-- **Database**: [Any databases used]
-- **Authentication**: [If any authentication mechanisms are implemented]
+- **Frontend**: [HTML/CSS/JavaScript/Firebase]
+- **Backend**: [Used Firebase along with other technologies]
+- **Database**: [Firebase]
+- **Authentication**: [No Auth nedded, the dashborad was kept either on localhost so that only certain users can access the dashboard over there Small private Network.]
 
 ## How to Use
 
@@ -26,8 +26,8 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
    - Submit to receive a confirmation.
 
 2. **Hosts**:
-   - Log in to the host dashboard with your credentials.
-   - Access the real-time registration data.
+   - Connect to the WiFi via credentials
+   - Access the site on URL localhost:300
    - Use the dashboard to monitor event participation and manage logistics.
 
 ## Installation & Setup
