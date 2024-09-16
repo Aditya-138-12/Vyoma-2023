@@ -11,13 +11,6 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
   - Manage and update event details
   - Monitor important metrics and student data
 
-<p align="center">hello
-  <video width="80%" controls>
-    <source src="https://drive.google.com/file/d/1LA1hfhEOTgsfOA1EiaEHZ4YqN_fF2y8A" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
  # Images of the Site
 ## Landing Pages
 ![Landing Page - 1](https://i.ibb.co/JqTmWv0/vyoma-landing-1.png)  ![Landing Page - 2](https://i.ibb.co/2cQZRvr/vyoma-landing-page-4.png)   ![Landing Page - 3](https://i.ibb.co/0cn8kPm/vyoma-landing-page-2.png)  ![Landing Page - 4](https://i.ibb.co/F6Lxf8T/vyoma-landing-page-3.png)
