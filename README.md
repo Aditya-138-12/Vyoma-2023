@@ -1,85 +1,82 @@
-# Vyomaa Aerospace Festival Website and Registration Portal
+# Aerospace Fest Mobile View Site
 
 ## Overview
-This repository contains the codebase for the Vyomaa Aerospace Festival website and its associated registration portal. Vyomaa is an aerospace department festival organized by our college, showcasing cutting-edge aerospace technology and fostering innovation among students.
+Welcome to the Aerospace Fest Mobile View Site! This project is a mobile-responsive website designed to provide attendees with seamless access to all relevant information about the Aerospace Fest. Optimized for mobile devices, the site ensures a smooth user experience on-the-go.
 
 ## Features
-- Informative festival website with event details and schedules
-- Online registration system for participants
-- Admin dashboard for event management and participant tracking
-- Advanced search functionality in the dashboard for efficient data retrieval
+- **Mobile-Responsive Design:** Fully optimized for mobile devices, ensuring accessibility on various screen sizes.
+- **Event Information:** Provides details about schedules, speakers, and other event-related information.
+- **User-Friendly Interface:** Easy navigation with a modern and clean design.
+- **Real-Time Updates:** Information is kept current with the latest event details.
 
-## Technology Stack
-- Frontend: React.js
-- Backend: Node.js with Express.js
-- Database: MongoDB
-- Authentication: JSON Web Tokens (JWT)
-- Styling: CSS with Sass
+## Screenshots
+Here are some screenshots of the site:
+
+### Home Page
+![Home Page](./screenshots/home-page.png)
+
+### Event Schedule
+![Event Schedule](./screenshots/event-schedule.png)
+
+### Speaker Information
+![Speaker Information](./screenshots/speaker-info.png)
+
+## Access the Site
+You can view the live site here:
+- [Visit the Aerospace Fest Site](https://tinyurl.com/4rt9xwku)
 
 ## Installation
+To run this site locally, follow these steps:
 
-1. Clone the repository
-   ```
-   git clone https://github.com/yourusername/vyomaa-website.git
-   ```
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+Navigate to the Project Directory:
 
-2. Navigate to the project directory
-   ```
-   cd vyomaa-website
-   ```
+bash
+Copy code
+cd <project-directory>
+Install Dependencies:
 
-3. Install dependencies for both frontend and backend
-   ```
-   npm install
-   cd client && npm install
-   ```
+bash
+Copy code
+npm install
+Run the Project:
 
-4. Set up environment variables
-   - Create a `.env` file in the root directory
-   - Add necessary environment variables:
-     ```
-     PORT=5000
-     MONGODB_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     ```
+bash
+Copy code
+npm start
+Technologies Used
+HTML5: For structuring the content.
+CSS3: For styling and ensuring responsive design.
+JavaScript: For interactive elements and functionality.
+Responsive Design Frameworks: (e.g., Bootstrap) to enhance mobile compatibility.
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
-5. Start the development server
-   ```
-   npm run dev
-   ```
+Fork the Repository: Click the "Fork" button on the top right of this page.
+Create a New Branch: git checkout -b feature/YourFeature
+Make Changes: Implement your changes or add new features.
+Commit Changes: git commit -am 'Add new feature'
+Push to the Branch: git push origin feature/YourFeature
+Create a Pull Request: Submit your changes for review.
+Contact
+For any questions or inquiries, please contact:
 
-## Usage
-- Access the website at `http://localhost:3000`
-- Register for events through the registration portal
-- Admin dashboard is available at `http://localhost:3000/admin` (login required)
+Project Lead: [Your Name]
+Email: [Your Email]
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Admin Dashboard
-The admin dashboard offers the following features:
-- Comprehensive overview of event registrations
-- Real-time search functionality for quick data retrieval
-- Filtering options based on events, colleges, and registration dates
-- Export functionality for registration data
+Thank you for exploring the Aerospace Fest Mobile View Site!
 
-## Contributing
-We welcome contributions to improve Vyomaa's website and registration system. Please follow these steps:
+markdown
+Copy code
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### Notes:
+- **Replace `<repository-url>`** with the URL of your Git repository.
+- **Replace `<project-directory>`** with the actual name of your project directory.
+- **Replace `[Your Name]`** and **`[Your Email]`** with your actual name and contact information.
+- **Screenshots:** Ensure you have a `screenshots` directory in your project folder, and place your image files there with the filenames matching those in the `README.md`.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Contact
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/vyomaa-website](https://github.com/yourusername/vyomaa-website)
-
-## Acknowledgements
-- [React.js](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [JWT](https://jwt.io/)
+Feel free to make any adjustments as needed!
