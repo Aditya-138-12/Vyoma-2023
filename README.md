@@ -13,10 +13,10 @@ Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aer
 
 ## Tech Stack
 
-- **Frontend**: [HTML/CSS/JavaScript/Firebase]
-- **Backend**: [Used Firebase along with other technologies]
-- **Database**: [Firebase]
-- **Authentication**: [No Auth nedded, the dashborad was kept either on localhost so that only certain users can access the dashboard over there Small private Network.]
+- **Frontend**: HTML/CSS/JavaScript/Firebase
+- **Backend**: Used Firebase along with other technologies
+- **Database**: Firebase
+- **Authentication**: No Auth nedded, the dashborad was kept on localhost so that only certain users can access the dashboard over there Small Private Network.
 
 ## How to Use
 
