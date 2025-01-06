@@ -1,6 +1,6 @@
 # Vyoma Fest - Aerospace Department Website
 
-Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aerospace Department** of [SJC Institute of Technology]. This website is designed exclusively for **mobile view**, offering a smooth and responsive experience for students and hosts.
+Welcome to the official website for **Vyoma Fest**, an event hosted by the **Aerospace Department** of SJC Institute of Technology. This website is designed exclusively for **mobile view**, offering a smooth and responsive experience for students and hosts.
 
 ## Features
 
